@@ -1,0 +1,372 @@
+{
+   "checksum": "0bd636653cddd7256e57b2c469684344",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13322584094611883",
+            "date_last_used": "13370452080460786",
+            "guid": "0882447a-57fa-4a51-a679-a931f1f71315",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Drive",
+            "type": "url",
+            "url": "https://drive.google.com/drive/u/0/my-drive"
+         }, {
+            "date_added": "13340827521644311",
+            "date_last_used": "13372691560885243",
+            "guid": "3b65f78d-7ccb-41b3-9c6c-7532bcc91462",
+            "id": "6",
+            "name": "Gmail",
+            "type": "url",
+            "url": "https://accounts.google.com/b/0/AddMailService"
+         }, {
+            "date_added": "13370449327746589",
+            "date_last_used": "13372691387572895",
+            "guid": "87b466b6-a4cb-4f03-af96-b61a37221ba7",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Info",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/1/#inbox"
+         }, {
+            "date_added": "13370451269312221",
+            "date_last_used": "13372691563131723",
+            "guid": "1fa860b6-2b1b-4024-ae4a-0baa57b76a4a",
+            "id": "8",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Poli",
+            "type": "url",
+            "url": "https://outlook.office365.com/mail/inbox/id/AAQkAGQ1ODQwYWY1LTgyMGMtNGY2OC04MDU1LWUwY2ZkOWRhNzFhYQAQAGTSXbnaF7JHlTX6T8xEjmY%3D"
+         }, {
+            "date_added": "13369845228075345",
+            "date_last_used": "13372785381411119",
+            "guid": "90c0ac1f-e4dd-4597-824b-0d89b26bb43e",
+            "id": "9",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Polimi",
+            "type": "url",
+            "url": "https://aunicalogin.polimi.it/aunicalogin/aunicalogin.jsp?lang=IT&id_servizio=376&__pj0=0&__pj1=50980fcd8f606999f80f2f8f06c27527"
+         }, {
+            "date_added": "13370804522423599",
+            "date_last_used": "13372703658048359",
+            "guid": "ddf8242b-16d6-467c-87b9-7595264ff17d",
+            "id": "10",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "WeBeep",
+            "type": "url",
+            "url": "https://webeep.polimi.it/my/"
+         }, {
+            "date_added": "13370448789525392",
+            "date_last_used": "13370450450541939",
+            "guid": "78e09ba7-b3b1-4c87-beca-bc08d199d877",
+            "id": "11",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Linkedin",
+            "type": "url",
+            "url": "https://www.linkedin.com/feed/"
+         }, {
+            "date_added": "13339859656253721",
+            "date_last_used": "13372691366870755",
+            "guid": "14996c93-0298-47be-b7fd-c09334123b1c",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "GitHub",
+            "type": "url",
+            "url": "https://github.com/"
+         }, {
+            "date_added": "13370350958841022",
+            "date_last_used": "13372801734490457",
+            "guid": "45367e89-5dfe-41f1-89b8-99535a610869",
+            "id": "13",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ChatGPT",
+            "type": "url",
+            "url": "https://chatgpt.com/"
+         }, {
+            "date_added": "13370367758237241",
+            "date_last_used": "13372691380131514",
+            "guid": "18a1e928-147d-4f87-8b4d-e06ab06611a8",
+            "id": "14",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "edx",
+            "type": "url",
+            "url": "https://home.edx.org/"
+         }, {
+            "date_added": "13351539642807004",
+            "date_last_used": "13372714340579139",
+            "guid": "4c947d18-167e-46e9-8bc3-525552f6f342",
+            "id": "15",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Telegram",
+            "type": "url",
+            "url": "https://web.telegram.org/a/"
+         }, {
+            "date_added": "13322584213288723",
+            "date_last_used": "13372801676162282",
+            "guid": "0c1069de-8d98-4624-a212-8131db057ffb",
+            "id": "16",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "WhatsApp",
+            "type": "url",
+            "url": "https://web.whatsapp.com/"
+         }, {
+            "date_added": "13340827521644965",
+            "date_last_used": "13372802249850512",
+            "guid": "d975c18c-e095-4d74-8980-f1da478fda30",
+            "id": "17",
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://youtube.com/"
+         }, {
+            "date_added": "13340049807295303",
+            "date_last_used": "13372803362164023",
+            "guid": "b5d81eb6-be60-4051-b0dc-5a3d3534827a",
+            "id": "18",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Spotify",
+            "type": "url",
+            "url": "https://open.spotify.com/"
+         }, {
+            "date_added": "13370437344061874",
+            "date_last_used": "0",
+            "guid": "cc726a57-a099-4661-a519-9d38f51b063b",
+            "id": "19",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Aniwatch Free Anime Streaming Homepage",
+            "type": "url",
+            "url": "https://aniwatchtv.to/home"
+         }, {
+            "date_added": "13371409031589583",
+            "date_last_used": "13372714296932771",
+            "guid": "7e0d1959-a1f8-43b8-9919-2f77867bcc4a",
+            "id": "20",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Soccer Streams - dedicated to the highest quality of free soccer / football streams",
+            "type": "url",
+            "url": "https://top.soccerstreams100.io/"
+         }, {
+            "date_added": "13371592391536997",
+            "date_last_used": "13372714318780358",
+            "guid": "e08735ac-0366-49a5-99d9-46d7fe24ba52",
+            "id": "21",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Calcio.buzz",
+            "type": "url",
+            "url": "https://calcio.buzz/"
+         } ],
+         "date_added": "13371920378707617",
+         "date_last_used": "0",
+         "date_modified": "13371592391536997",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13339799464166317",
+            "date_last_used": "0",
+            "guid": "0935aa97-b596-4e05-ba5b-7567aded6ff1",
+            "id": "22",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Watch Naruto: Shippuden online free on 9anime",
+            "type": "url",
+            "url": "https://9animetv.to/watch/naruto-shippuden-355?ep=8158"
+         }, {
+            "date_added": "13344634101440530",
+            "date_last_used": "0",
+            "guid": "d5a29d69-cb79-46c0-8f5a-fd3f4817bbbe",
+            "id": "23",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "animepahe :: okay-ish anime website",
+            "type": "url",
+            "url": "https://animepahe.ru/"
+         }, {
+            "date_added": "13368201080874634",
+            "date_last_used": "0",
+            "guid": "66b6e4a7-ab73-4b8d-b3d3-f05db9a3b3bf",
+            "id": "24",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "c libraries",
+            "type": "url",
+            "url": "https://manual.cs50.io/3/printf"
+         }, {
+            "date_added": "13371991458573160",
+            "date_last_used": "0",
+            "guid": "fc865433-9422-4fb8-beac-e157badbe1f8",
+            "id": "36",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "",
+            "type": "url",
+            "url": "chrome://newtab/"
+         }, {
+            "date_added": "13372621695959120",
+            "date_last_used": "0",
+            "guid": "32a691c9-b95e-4af5-97c9-708d8e0a5c30",
+            "id": "38",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "dotfiles/.config/waybar/style.css at master · mxkrsv/dotfiles",
+            "type": "url",
+            "url": "https://github.com/mxkrsv/dotfiles/blob/master/.config/waybar/style.css"
+         } ],
+         "date_added": "13371920378707619",
+         "date_last_used": "0",
+         "date_modified": "13372621695959120",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13344469568072083",
+               "date_last_used": "0",
+               "guid": "54a0d218-7356-45a9-adcc-78c3f29d82d3",
+               "id": "26",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "MangaReader - Read Manga Online Free",
+               "type": "url",
+               "url": "https://mangareader.to/"
+            } ],
+            "date_added": "13344469633152487",
+            "date_last_used": "0",
+            "date_modified": "13344469633152487",
+            "guid": "e7000a16-1371-4637-ae2a-cd184c0709cf",
+            "id": "25",
+            "name": "Manga",
+            "type": "folder"
+         }, {
+            "date_added": "13303328415903305",
+            "date_last_used": "0",
+            "guid": "7d178e35-3027-4c13-b5e4-183a10137e34",
+            "id": "27",
+            "name": "https://it.pornhub.com/interstitial?viewkey=ph62b19f66d59fe",
+            "type": "url",
+            "url": "https://it.pornhub.com/interstitial?viewkey=ph62b19f66d59fe"
+         }, {
+            "date_added": "13303328528848614",
+            "date_last_used": "0",
+            "guid": "b5a65ba4-1777-405a-9cef-0ab51a0a6835",
+            "id": "28",
+            "name": "Angela White Lesbian Video Porno | Pornhub.com",
+            "type": "url",
+            "url": "https://it.pornhub.com/video/search?search=angela+white+lesbian"
+         }, {
+            "date_added": "13310666468227002",
+            "date_last_used": "0",
+            "guid": "8b63cb96-cc04-4b59-825b-03c2935cc512",
+            "id": "29",
+            "name": "Temp Mail - Disposable Temporary Email",
+            "type": "url",
+            "url": "https://temp-mail.org/en/"
+         }, {
+            "date_added": "13313700922754227",
+            "date_last_used": "0",
+            "guid": "0d440001-9945-4693-b3ae-c1fe726b1857",
+            "id": "30",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "My Account",
+            "type": "url",
+            "url": "https://www.pokerstars.it/en/help/categories/stars-account/"
+         }, {
+            "date_added": "13313718306895644",
+            "date_last_used": "0",
+            "guid": "3ffb8303-b75d-4030-a72b-e4dd848c9de0",
+            "id": "31",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Update your Xbox Wireless Controller | Xbox Support",
+            "type": "url",
+            "url": "https://support.xbox.com/en-US/help/hardware-network/controller/update-xbox-wireless-controller#:~:text=To%20do%20this%2C%20press%20the,controller%20you%20want%20to%20update."
+         }, {
+            "date_added": "13317687154577708",
+            "date_last_used": "0",
+            "guid": "0c729f90-6c8e-4283-8209-49d86e168fde",
+            "id": "32",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "In cosa consiste la prova e come prepararsi: polimi",
+            "type": "url",
+            "url": "https://www.polimi.it/futuri-studenti/ammissione-ai-corsi-di-laurea/ingegneria/in-cosa-consiste-la-prova-e-come-prepararsi"
+         }, {
+            "date_added": "13318700466111608",
+            "date_last_used": "0",
+            "guid": "72ea8a35-58c0-4413-85d2-e0d9c69722df",
+            "id": "33",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Relazione di fisica - calore specifico solidi - Online LaTeX Editor Overleaf",
+            "type": "url",
+            "url": "https://www.overleaf.com/project/63c2ee5ffd057c6b2d3022dc"
+         }, {
+            "date_added": "13357984373361563",
+            "date_last_used": "0",
+            "guid": "24086499-6b76-4898-9ce7-dcd8fb3dbbcf",
+            "id": "34",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "GitHub - 0x192/universal-android-debloater: Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device.",
+            "type": "url",
+            "url": "https://github.com/0x192/universal-android-debloater"
+         } ],
+         "date_added": "13371920378707621",
+         "date_last_used": "0",
+         "date_modified": "13357984373361563",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CqoBCokBCIiBAhKCASAAkgF9CjQKDmNocm9tZV9zeW5jX2JtEgU1MSFibRoSCUPALfHnIwYAEUPALfHnIwYAKXP0LfHnIwYACkUKFmFubm90YXRpb25fY2hyb21lX3N5bmMSBTUxIWJkGhIJAF/B6+cjBgARAF/B6+cjBgApqfQt8ecjBgAwgL6F3v78iAMSACoYbU1iMldMc1RZKys0TUtMQUVKcXlVQT09SAMS7AEIBRLnAQocSmdBYzkzL0VYcUZ3cmpsNU0vSUVyNnFzVW9vPRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHOWNVRSs3ZnErdHlpSkg1RHFsaEpqcEx6Mms2d2dMMTFwUUQyQTlGZGtWUjBuWkRUQ3VHSmtRVkh2Z3FUc3RvWTZCL1JUUT09GAAgACgAMImm48zuwogDOJSfuLnrMECUn7i56zBKHGIwcDNVcGJqUThiaVQzZFJoUkNYQS9CL3JDTT1aHyIdNnN6STdWZ1Ric2ZzQm92Q3hLTFdqaWFBN3pzWT1l+pHe2xLsAQgeEucBChxFMGJVelpxVWswV2VDbmJGWHdnU2hMSUpqems9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEcrM2FhMHczNS9ZSzY5NnpCR1IrdWlEc0tMY0tIYkFHaWRZYnhTWWlFMk1lbTZnY3dWWC9KcDl0dXg0MnNNWDhrZVkzQWlBPT0YACAAKAAwwt3AsPTE+wI4grvOrcowQIK7zq3KMEocbC80MXFCVEsxb2tnU0VCQjVhZXhtV2hYNE44PVofIh3oZ3plVTk4OVVSZE0yQTNLcWZvY016RHdsWnBFPWVOxYthEuwBCAwS5wEKHHBiMkEzL0w2RXB1bnBzN1FQTERmU3I2SFZLcz0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoR0JId3lJdFlxV21nTzcybXZ4YVdTdjFKalo2MWFwMXZtK2xtN1JmUWxZWVIyTjdzMElCQVRFMWRlNXNrVytYZTNrUjFJN3c9PRgAIAAoADDor8WPm+GIAzi+7IjnqzFAvuyI56sxShxDWGo1aE5HaitwK25FNkpSSFhyaE1YeWRzMEk9Wh8iHX9wZW1GYmZ4OE1CMkRTdFlkMElkN2dhOTYrSWc9ZcjzP7sSqwEIARKmAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRJOWjpBRHF0QVp3c0g3TFdsR1I2RTZNL3QyRjhnOVhsTlpxTzdWRmJ4Uk5xK08wa0tNU1FwQ1o3S1k3bkZncDVWZFhTWGFtek9uUjM4cit5GAAgACgAMNSaveao44gDOABAAEocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAAS7AEIJBLnAQocNDFGVjhwbG54UFIvMnE3R2czVGdpUEovK2JNPRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHNENFUXdvV2hXM0gwN1ZOMU16TERoV0FUQUJ0aTNrdU5CdHhHWEZNM2hHTXR6T2ZMRFpqYXlTOEM0ZjhucEFlVUJVcytzZz09GAAgAigCMN7XtcOx5YgDOI222sCjMkCavNrAozJKHFJWa2k5bk54M1luWit0cWRvVUh1M3VVOTh0QT1aHyId3WNkSSs4WStPY2FZZWJ1eUpjdVczY0ppNkp4UT1lAAAAABLsAQgREucBChxpaDExNUJsWHdFL1RpZTBvOUlGMThxR2srSUU9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEd4T3MvYjYrTDBrQXVFOUxUR3FubnNwa01BRHkxRXpPMVl2MS9CbXpkQnkvMzFOdmVKeEVtRTBFdFI0cWhHczI3eTU5a1BRPT0YACAAKAAwheG6gd7BgwM4vb/3yZUwQL2/98mVMEocSDVUUHU0aW13dWtZRlQxdng2WkVzSUJrZnd3PVofIh33QWZ1bzhjeXgzNUtpZk1oZy8zY1lPOTBKN25VPWU4+TkzEusBCAYS5gEKHHBKMVhEZktEZVgvYTM5UUNsZ3lWSUxyVjdMYz0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoRzM5THczYUwxdUF3dC8wTkxzaTM4YjRlY3RTODNFRXJlaUNtZWI4a3E0ODN5QXlmOWlsUy9KQVJPR0FMK1BaTzYyOUZwUmc9PRgAIAAoADCF4bqB3sGDAzi9v/fJlTBAvb/3yZUwShxBTDVkZHBxdGZpaExPNS81VHU2NnpINzQ4L3M9Wh4iHG1leHdWK3EyS3ozMEtLY1NEWTJDMGRIWGt5Zz1lmz2FthLsAQgmEucBChw3NGVuWjd0WGltQzFYM2w3UGxDeVY3L0l2d1k9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEdvRW0xb2syV2tERUNERUJWWDR5RHhicEwyUXFhT1NzR1hvT0F2WlBtZVJEQzFUVE9sSlY3S2hLYmFjWFZ3MlM3QTdleGNRPT0YACACKAIwkYz/q933iAM414ed7aUyQN2Hne2lMkocUHhxNHdrQmpneW5lQVpLdUFtSkVBeDBNTFhFPVofIh3ueUk0NWxRT01NcVlYN0VJZHhhMWRDbW1kSUdNPWXI8z+7EuwBCAcS5wEKHFB3dlNJb3JmYUdYT3dleHJ4cHVKbnVTM1kydz0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoR1Btc3FBN1lVRDNhWFdJNG1aUlZqTXc2cmQ5U2grcFJvYkVMMWxuOHFKU2NPMVRPaFl6cStsRzB5YmlSUktFcndLQnBuUlE9PRgAIAAoADDejeDq9smIAziCna7hnTJAgp2u4Z0yShxxbVJaQlBYWWRpcDl0Mkx0NHFrS3JqODFwN3M9Wh8iHXdpU1hCRUkzd25EUy8raFAweGpBZWRrZWlGcTg9ZZs9hbYSwwEIAhK+AQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRJmWjpBRHF0QVp5NnNtaHlKeUg2a3pMVUlmTi8yYTRqQmxHZ1FhNExaQmFrQ29vQUg3SUJZQjZpdmIwa29tSlVUUjlsRGpTSlNIczdPSjZaS1pKZGgweTgrZytiTFhROE41TmFjUT09GAAgACgAMNSaveao44gDOABAAEocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAAAS7AEIEBLnAQocVHlWVU1pWWcybjhManp5LzI4eWhoNnppQU8wPRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHR3JpSWM1NHh0a1Jqa3BGanFNaXN0Zm9XZFVQd3ZHd2xsWFFZVkd1aGRqSkQ5clg0QnZoMmMxRE5kZG9XMUs1QjBUVXhpdz09GAAgCigKMPGi6c+R9YgDOKm+v7nrMEC9lOLCpTJKHExjNmxRajhvd0lFUVFmeUNIRE5BK0VuSjRBYz1aHyIdgTZ5ZXlSRzlvV3Y0dEVkV1V1bE1NUHh0UzNlaz1lUK7pIxLsAQghEucBChxpdmNUUWJyMktXbVp6NjBTVVJBVDJaNGRIMUU9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEdnQmNDaFY0K2twVTgxZzQ1dHZvV3d2RTFFb3puU0t3QnB2dkFKV1VzcllESGdyRjNWcStzZHVRYW5wVEQrNk9yUXVuK3RBPT0YACAAKAAwlsnOirvXiAM4v6/K/dwwQL+vyv3cMEocM3ZRb1JINTBQUXI3cGRSUnY1UzlPTFJMcFc0PVofIh39em51MEJnRDFzeXpZaEFDRHBCMFRnQ0hwc3NjPWX/BfCaEuwBCAsS5wEKHFdPaGhJeEk5b09uRXhCTmtlZ3hhZEdraWJ2VT0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoR2Q0VzBseE1zczRRVm0wZVVPMDU2OUtrYXUvZWl6ZlFXZkpOemQrZ1FOUWR2bnVFdldNMGR2VFVZVkdTOXRXUjdlQ3VSVFE9PRgAIAAoADDi+q/0x7iIAziVsI3hnTJAlbCN4Z0yShw3UUJITTd3UlI0VXlQYURQU2lLbEVqNnUxalE9Wh8iHX9nN0tUV083aXpmTHZ5M1ZLWHJ0M2p6TW16cmc9ZUVNStES6wEIGhLmAQocdUFBWVhlU2RrV3ZyRE5uMjhXRTBEOEV4VWE0PRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHNkphaDNFN3d1WFp2TmEzUDQ3bnMzYVIzaTZVNVVJNzlwOU1MalNaUGFsTHJRb3IvMFZoemM2T3FhclorMGg1YU45Q1Vhdz09GAAgACgAMPHetN6yxIIDOMrEn/28MUDKxJ/9vDFKHGdENzhvbDlkUkRFcHluSjNLVm1Mb0t5WDdyWT1aHiIceGYyZlVDYlFQclRiVVo5elFpMHAyYXF3cFV3PWWOk9A6EusBCBsS5gEKHG5CU1RhWmlCb1FOT3ArOENEalJwUkoxOGprZz0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoR2pLZVdaenBmRHpzcFRtTTBpQkpOOVFBVUFWcmZEVTVyZWFWQUN6OUdUYWxkeXlPTVJOYlZ1MFNaTnhtSzhGY2YzcW9EeHc9PRgAIAAoADCDksqx3JKIAzig8c7bozBAoPHO26MwShxnTFVCbG9RVFpDcUlqdG8wL2NZZlRiNjdBL0U9Wh4iHERVNjNqanhtSENOeThuekNHZ2hwR01HMFZVST1lHBvmGhLtAQgVEugBChxORW44bmZ0VnkzV0tnYTIyVEpQRVBZS1lQK1k9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEdocHE0SXQ3QUcxbUZabXBEaXhEbTNONUNkRUpxOFdSbGxlZnUwUDlDZCtFeFdqUVY1Q1pBSjI1TTRVOHhKdW9wL2JwWWhRPT0YACAAKAAwkZ+i/OLZiAM48aa1gqIyQPGmtYKiMkoceVZFUFpaaFd4dC8xSTZwUDRHY2JNYWd2R2JBPVogIh7//VUzNFNrQVoxbW1BVjlHakM1TnRUWmF4VHA0Zz1lAAAAABLsAQgNEucBChxPQVIyQ1NYVDc1VkVHZm8rLzA4Y1VtY29qeVU9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEdDdWRmSDBYeWdBZkxpT3c0S29zUk0xTVpQK0ZpYXNucHFGenJMR1VmckFhWUF3YXN1dWtGNGdKOGNSNHZGMDgxTzU3WFVnPT0YACACKAIwseiml+n8iAM4+aG6sp0yQNfj1MCmMkocZ2ZDRWJ3aUVrSFZIbDVVSGFmSlZlMjAzSFVvPVofIh2AL2MxeFhDcWxObERCMi82VDV3eTA0SlY2RmVRPWV8LVSAEuwBCAgS5wEKHG9sWHpuYloweU9IYjRhWFZkM3E4Zk9TV1QxTT0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoR1lUVm01eXNsTHYxZ2V0M2pvcVpieU9id2xneEZnTFM4NmpxWHoyaHR5RGhuRlR4NDZ3b0NvYnFFY0Y1enhKZUhMMXc4S0E9PRgAIAAoADCshoDX796IAzjA3aTinTJAwN2k4p0yShxBd1hMUExzS0JqQVE4TG8yUllWTSs2d1pIRk09Wh8iHXlwWFpONUhHS3ZzMWs1QkNiWDBNL2JXL3JwamM9ZeG9t8sS7AEIDxLnAQocamxOczE5NktqcUtNLzR5R3Jqc2p4ZEFvODdzPRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHR1JnR2VDMnFBSG5XYlM5L3U3b3pXMmVPQzQvNnMxb0RqUEx3Q01oNlU4ekpjemhQM0Z4NTVIcU1LY1pSYndETDhwL1g1QT09GAAgBigGMNXtmaCH8ogDOLjTwqjXMUDi8aSQpTJKHFJnM056VXBaZStUTlNyQy9XREFyOVJYTFpFcz1aHyIdgGNrd1E4VVM3RTV3OFVyUVJoMXkwMTJCdzN4az1lgFR1jhLtAQgUEugBChwwcUxBL3BOa21tUDdnOGVUWnRxcWYya0xlUmM9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEdMdkJlcTVpNDZiYU82cHB4bG9MZXNrejRRdm5VV1pFaDg5c0N0UG5NMDlwNjZRN214ZHJJTzdORWRCZ1cxNWdFMS81VGFnPT0YACAAKAAw1tn06LfUiAM4pfP9qqEyQKXz/aqhMkocZWZTbEpHSkNxWkRVVDJKWWF1QW1mYmgybDlvPVogIh7/+jYrQmdUU2xvU1pHQVBxRDdkR3dZelhydUJ1TT1lSVBFhBLrAQgWEuYBChx3MktFbEd4by96ZWFHMm1jOVJ2WEhuaTk0VlU9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEd3RUcrVTF1MUNIM0VSTTNieDkwcFpVYW11U3RBaTBjdDVlZExralBhZ1ZGbEN2eXk2OGZ0MU1paGw3RHhsQnBQNWJnb3JnPT0YACAAKAAwqtGT9LnohAM454GvyqsxQOeBr8qrMUocNU55dUs1czRSam5aSFhiOWhxTjQ1M21XTVBRPVoeIhxPNEQvd1NBaUdzdG5vT0Z0YVVJUCtaVmJEOEk9ZcaXOh4S7AEIEhLnAQocT0V3bUpzLzNlZnJZbW9NT3NJbTVSNWhuTjNZPRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHOWd1REJVNzRTNHpYNGIwNTJlT0VOakw1eDcxZmp5U1VVWUhrZlU0Ukg2a3FLbCtjN1AyZWRhNklEOWFnTTFrbGs2RllFZz09GAAgACgAMOj758qUkoQDOMDf3sGsMUDA397BrDFKHHhIVWd5bVd0VzRlMUxWQ2hkTHFrb1l0VVNEWT1aHyId+HppNFhIcjF4K1M5WWN1TXJ6cXpieC9zQUpxaz1lD2ImeBLsAQgYEucBChxudDZ1WnhDazhJQm9ZN1RhZzBqNEhCc0NKc1k9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEdaaHM1M0NaL3FlQWhGUm10b0JBWGU1dEFZVkdXOU85UnFUcjJRTHhoRE51RllodzdFZk5BcjdvTmxxZzc2aG4wTkpuejFnPT0YACAAKAAwsIm/p4n3hwM4qpCosZUyQKqQqLGVMkocTGN2elB1ZUxaeUtVY0xjc1lOZEozemN6YVF3PVofIh26VEt4Q1VOWVBXQ1F5UDB5RkxWQ0FtWS91QlhZPWWuyMz4EuwBCB0S5wEKHDdCeE5kajdWZHdTWk0xYkw5cmNVN3RDRU9HWT0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoR0xnTThyZmJ5bGtydHVsR0pvd3djS1lHN0x5cUwwR2J0N3VsazdhclBDYUtVT05VWnB2ZFFaU0lqTW00dWxuNXk1cllmTHc9PRgAIAAoADD3s6mRzOz6AjiGh9aGvzBAhofWhr8wShxnWjQwMW52SXVFN1RvSmRnd0tkb0EzZFExN1k9Wh8iHdF2TG9FWC9iV2dVdzdrQXppZzRMNS9kOStwaEk9ZYy7OgkS7QEIExLoAQoccVBTMFBiandmRFVSRE9JMzdYc2hFQWVSRlRjPRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHQUxtSGhhbXdDNzM1UWpLOExrQkNRYnh6MVN3TDQzaWVVcUcwK2tUckpyakQ3NHBKUldVNHRRazZWc0pCeHloTGIrQ2todz09GAAgACgAMP2ui+LAuIgDOL3m0tudMkC95tLbnTJKHFpGb29HMlR2YlVLMVFMeTZmWmszcWlEcGhRcz1aICIe//VteTJPTTRQZUNzSnd2b3g4U2RYTHY5Tm9yTHM9ZZE7oOkS7AEIGRLnAQocMG9JMjRlQVUrODFsVDVhTWxkVnRBQThQUDFjPRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHVEV1TGQvZG5FY2pHY25WNHprWXBmeVNubnZkV3RZQnNXcWxQZlI3K2VjQVFqbjFxWHRqL1JRd0hyWGJnTE05OGxpMkQwQT09GAAgACgAMPHetN6yxIIDOJDBo/28MUCQwaP9vDFKHDcxa2oxUTduSkVITmNRa2h3SGhYb01XUnpCMD1aHyIdIlpQdU8xNk02cG5KazFNaXowNWpvUlVkM0xPZz1lAAAAABLtAQgKEugBChxYUE5JQStjV1JldzJKY1Exb1ZrcE05bUxabUE9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEc0TE5IRU1LalAxejh6Y0pGUU5NRll1UE5vUDBuOWlqQmIxV1VsWVdFR2xkUHdKandUR21zMFliRU9kSWwydldZVDdpK2Z3PT0YACAAKAAw3o3g6vbJiAM4t8vdip8yQLfL3YqfMkocM0J6NkNLeWRzSGd6U3pXb0NYSUVZaC9YY3NRPVogIh5/VW1VNGticS82Wk51NjhIWCtVd0c4RzBPd3Urcz1lUlzAvBLrAQgXEuYBChxTanBlWXJRWGxLSCswQ3NIUURYRDBXaFJoT0E9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEdzNURiSjN0Vk5iM0ROSWhWMDJBNm9YSjJvSnFyNnZpbWpVSW85NkFTRzJ2UzVBMXVvMHh3Q0RCdmRsa2pOZTV0WWphRTFnPT0YACAAKAAw+pCOtpfJggM4wO3Zy70xQMDt2cu9MUoccklYWGJtQXduNTc1L2ZvdmJrUkhxUWdYVzlZPVoeIhx0QWwyeWt6SHJKZFI0eUNUV1dMSGpWRU42bk09ZRZzLFwS7AEIHxLnAQocWFNQd0NNM0xsSFhUNnJlN0d2cko0eTdEU28wPRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHekgwVnJOOVdibFhBenFSN0U0cWxPTFhKSmlLcjJzcnpVaG5Sb0ovTlcxSVZ3bEV0WkJ2SGNOS3RZT2RMZVU0NTZaTENQUT09GAAgACgAMNnS1ZK1xfsCOM/A87XKMEDPwPO1yjBKHEZTdDJkNUZQa0YxMXJZbnlVSEtaV3pldlNZcz1aHyId9DJQL0ZFaXpRQzBLK2hYU094eUtQM1RzNEtqTT1ltnQ5GxLDAQgDEr4BChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EmZaOkFEcXRBWnlITnlIazhwUVVrVE4vMnNPYUZxeVljREVwbUNtUHJlaUtVc3V5SGNpQm1rK3hwcG56bFlZQjNvSzFxZFM1K3VGNVBmdjB0bjlEL1ZzZmZHdmVHVjVxQklxUXhRPT0YACAAKAAw1Jq95qjjiAM4AEAAShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAABLsAQgJEucBChxWQ1JScnE5clViem8rNFhEUmxmLzZ2UkdVNUU9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEd4U1l2emFRZitJRnorbEkyQUFQVi9lZDlRWmVyUk8yTDI0dlJPQ0QyRnNSUHhnbUdMRUNmYy9RbW5hbmNTaml0NEptMkRRPT0YACAAKAAww9Ls2sC4iAM4q/SmwZsyQKv0psGbMkocczQ1V2l6ajN5MG1WS3RKa3Y3MExkTHBaNU1VPVofIh1+eUxWNWVYK2tDNnBtUEcwRWU0eER2YmdpcW1FPWUAAAAAEuwBCBwS5wEKHDFybEEwVG1YV2VyeFRjVS9OQ1dYNkowbkNRZz0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoRzFzNjlLNWdQUHRXSWVrL2N0YWVQd2FKUy82ZHVCWHpnT3pHRE80WEl0RDBpV2hsZk84UlBMclVxcVZnV1NPVnIyNW1vYWc9PRgAIAAoADDRyOTqxKH5AjjQ49XbozBA0OPV26MwShx2b1N5ZFp6UjBXOCt4Q3ZPQ3JnY2d3QzduMmM9Wh8iHaIremRZU1dXRmZsNVBndG5Nd2FIZjVEcWZJc2s9ZdHEWwIS7AEIDhLnAQocN0ZjTzdJS0FXcmh4YnoxWEsvRTM2bUtoOXN3PRJmWjpBRHF0QVp3dDJxYlFKQjBOSFJkNDczY20zUWhHUFZRSG5sekJzQmRJOW54cFZSYmFqK1g4UXp3ang2bVdpckJqVVdpdFZIck1sUEhyRGtpdzZqOEg3aGtQNDRNSUZ6cjhRUT09GAAgACgAMKWrht7AuIgDOJ3Pu7qdMkCdz7u6nTJKHE1zUGhjK3c3L3FFV2pabzNLZExmRzh1eDhRQT1aHyIdgE1CNCtJdWZIM1RzTXdab1dBTXJFTWZSUFNCVT1lEXd8BBLsAQggEucBChxHdVhuVjg1a0xSKytTMmtvQUF5VTcxQWd0ekk9EmZaOkFEcXRBWnd0MnFiUUpCME5IUmQ0NzNjbTNRaEcyb0JJOVY1Wng0a3NuWXo0Snc1MUZCeHV5cG1qT0pDM2Y3ZDc0bGoxN1dwWWxJZTBnb3pNdGJBRXg1SWpPbFRpVlhrU2t3PT0YACAAKAAw9Za5nfa4/AI4kt+ymtkwQJLfsprZMEoccmp3bnZpdklQQjNWY1FESVA3WUU0WTJRNWR3PVofIh36L3grSklrRk1LYUJ3bmwrWGFKYmQ2am9rRDV3PWUuc73CEuwBCCIS5wEKHEF2cHBvYW5va1l6V3VqUmdNRW41RUs5ZlFQZz0SZlo6QURxdEFad3QycWJRSkIwTkhSZDQ3M2NtM1FoRzgvTFNzMVVVY3VXMk1pZzBuTGFWcjl0MnBGeC9FbGtRRStHUXU4b29iRDNWQzN2emFLQWdMTUlORk9uNitJWThVNjB0NEE9PRgAIAAoADDor8WPm+GIAzj55M2p7zFA+eTNqe8xShxDQmZVKzJxTkk5QVcweEQzbTVhcEdGUThLc2c9Wh8iHf5uNXU1c3d3Y2kvMklpYTE1K1lLV1F5RXN1d289ZcjzP7swATgA",
+   "version": 1
+}

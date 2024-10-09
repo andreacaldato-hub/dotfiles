@@ -1,0 +1,28 @@
+[window]
+# Window transparency level
+opacity = 0.9
+
+# Padding around the terminal (x: horizontal, y: vertical)
+padding.x = 10
+padding.y = 10
+
+# Window decorations: "full" keeps the title bar and borders, "transparent" removes visible borders.
+decorations = "full"
+# Font configuration
+[font]
+
+# Primary font family
+normal.family = "JetBrainsMono Nerd Font"
+bold.family = "JetBrainsMono Nerd Font"
+italic.family = "JetBrainsMono Nerd Font"
+bold_italic.family = "JetBrainsMono Nerd Font"
+
+# Font size in points
+size = 11.0
+
+
+[shell]
+# Use bash or zsh, for example
+program = "/bin/bash"
+# Pass arguments to run a command automatically
+args = ["-c", "neofetch; exec bash"]

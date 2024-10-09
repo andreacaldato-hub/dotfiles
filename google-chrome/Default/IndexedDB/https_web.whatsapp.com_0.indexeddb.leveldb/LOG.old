@@ -1,0 +1,42 @@
+2024/10/07-21:07:56.279 3f55 Reusing MANIFEST /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/07-21:07:56.280 3f55 Recovering log #785
+2024/10/07-21:07:56.285 3f55 Reusing old log /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000785.log 
+2024/10/07-21:07:56.285 3f55 Delete type=2 #781
+2024/10/07-21:07:56.285 3f55 Delete type=2 #774
+2024/10/07-21:07:56.285 3f55 Delete type=2 #776
+2024/10/07-21:07:56.285 3f55 Delete type=2 #767
+2024/10/07-21:07:56.285 3f55 Delete type=2 #766
+2024/10/07-21:07:56.285 3f55 Delete type=2 #778
+2024/10/07-21:07:56.285 3f55 Delete type=2 #769
+2024/10/07-21:07:56.285 3f55 Delete type=2 #762
+2024/10/07-21:07:56.285 3f55 Delete type=2 #763
+2024/10/07-21:07:56.285 3f55 Delete type=2 #787
+2024/10/07-21:07:56.286 3f55 Delete type=2 #782
+2024/10/07-21:07:56.286 3f55 Delete type=2 #771
+2024/10/07-21:07:56.286 3f55 Delete type=2 #764
+2024/10/07-21:07:56.286 3f55 Delete type=2 #773
+2024/10/07-21:07:56.286 3f55 Delete type=2 #775
+2024/10/07-21:07:56.286 3f55 Delete type=2 #779
+2024/10/07-21:07:56.286 3f55 Delete type=2 #765
+2024/10/07-21:07:56.286 3f55 Delete type=2 #777
+2024/10/07-21:07:56.286 3f55 Delete type=2 #770
+2024/10/07-21:07:56.286 3f55 Delete type=2 #768
+2024/10/07-21:07:56.286 3f55 Delete type=2 #780
+2024/10/07-21:07:56.286 3f55 Delete type=2 #788
+2024/10/07-21:07:56.585 3f55 Level-0 table #814: started
+2024/10/07-21:07:56.586 3f55 Level-0 table #814: 108662 bytes OK
+2024/10/07-21:07:56.587 3f55 Delete type=0 #785
+2024/10/07-21:07:56.588 3f55 Manual compaction at level-0 from '\x00\x1b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1c\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1b\x00\x00\x05' @ 3100455 : 1
+2024/10/07-21:07:56.588 3f55 Compacting 1@0 + 1@1 files
+2024/10/07-21:07:56.591 3f55 Generated table #815@0: 5770 keys, 102728 bytes
+2024/10/07-21:07:56.591 3f55 Generated table #816@0: 34 keys, 2262 bytes
+2024/10/07-21:07:56.592 3f55 Generated table #817@0: 102 keys, 3407 bytes
+2024/10/07-21:07:56.592 3f55 Compacted 1@0 + 1@1 files => 108397 bytes
+2024/10/07-21:07:56.593 3f55 compacted to: files[ 0 3 26 0 0 0 0 ]
+2024/10/07-21:07:56.593 3f55 Delete type=2 #814
+2024/10/07-21:07:56.593 3f55 Manual compaction at level-0 from '\x00\x1b\x00\x00\x05' @ 3100455 : 1 .. '\x00\x1c\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/07-21:07:57.527 3f56 Compacting 1@1 + 1@2 files
+2024/10/07-21:07:57.555 3f56 Generated table #818@1: 40772 keys, 2063054 bytes
+2024/10/07-21:07:57.555 3f56 Compacted 1@1 + 1@2 files => 2063054 bytes
+2024/10/07-21:07:57.556 3f56 compacted to: files[ 0 2 26 0 0 0 0 ]
+2024/10/07-21:07:57.556 3f56 Delete type=2 #789

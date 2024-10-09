@@ -1,0 +1,7 @@
+2024/10/04-18:23:59.947 1036 Creating DB /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.sofascore.com_0.indexeddb.leveldb since it was missing.
+2024/10/04-18:23:59.949 1036 Reusing MANIFEST /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.sofascore.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/04-18:24:00.440 104c Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/10/04-18:24:01.114 104a Level-0 table #5: started
+2024/10/04-18:24:01.115 104a Level-0 table #5: 1876 bytes OK
+2024/10/04-18:24:01.116 104a Delete type=0 #3
+2024/10/04-18:24:01.116 1035 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,5 @@
+[Libinput][9610][54][Glorious Model O]
+PointerAccelerationProfile=1
+
+[Mouse]
+X11LibInputXAccelProfileFlat=true

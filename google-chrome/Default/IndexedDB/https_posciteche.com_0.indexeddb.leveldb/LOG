@@ -1,0 +1,6 @@
+2024/09/28-14:48:41.906 1554 Creating DB /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_posciteche.com_0.indexeddb.leveldb since it was missing.
+2024/09/28-14:48:41.908 1554 Reusing MANIFEST /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_posciteche.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/09/28-14:48:41.973 1544 Level-0 table #5: started
+2024/09/28-14:48:41.974 1544 Level-0 table #5: 1398 bytes OK
+2024/09/28-14:48:41.975 1544 Delete type=0 #3
+2024/09/28-14:48:41.975 1544 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,0 +1,6 @@
+2024/10/04-18:18:09.329 1035 Creating DB /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.w3schools.com_0.indexeddb.leveldb since it was missing.
+2024/10/04-18:18:09.331 1035 Reusing MANIFEST /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.w3schools.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/04-18:18:11.626 1036 Level-0 table #5: started
+2024/10/04-18:18:11.627 1036 Level-0 table #5: 385 bytes OK
+2024/10/04-18:18:11.629 1036 Delete type=0 #3
+2024/10/04-18:18:11.629 1036 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,9 @@
+2024/10/07-21:42:35.953 6d4f Reusing MANIFEST /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/07-21:42:35.953 6d4f Recovering log #7
+2024/10/07-21:42:35.954 6d4f Reusing old log /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000007.log 
+2024/10/07-21:42:37.061 6d4e Compacting 1@1 + 1@2 files
+2024/10/07-21:42:37.074 6d4e Generated table #10@1: 336 keys, 50415 bytes
+2024/10/07-21:42:37.074 6d4e Compacted 1@1 + 1@2 files => 50415 bytes
+2024/10/07-21:42:37.075 6d4e compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/10/07-21:42:37.075 6d4e Delete type=2 #5
+2024/10/07-21:42:37.075 6d4e Delete type=2 #8

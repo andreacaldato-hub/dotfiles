@@ -1,0 +1,6 @@
+2024/10/07-21:22:17.388 5d2b Reusing MANIFEST /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/07-21:22:17.388 5d2b Recovering log #4
+2024/10/07-21:22:17.393 5d2b Reusing old log /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000004.log 
+2024/10/07-21:35:04.504 5d2b Level-0 table #8: started
+2024/10/07-21:35:04.518 5d2b Level-0 table #8: 1664114 bytes OK
+2024/10/07-21:35:04.519 5d2b Delete type=0 #4

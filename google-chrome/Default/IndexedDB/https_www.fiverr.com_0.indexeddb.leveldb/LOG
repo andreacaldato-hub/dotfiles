@@ -1,0 +1,6 @@
+2024/10/07-22:04:18.423 6d50 Creating DB /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.fiverr.com_0.indexeddb.leveldb since it was missing.
+2024/10/07-22:04:18.427 6d50 Reusing MANIFEST /home/andreacaldato/.config/google-chrome/Default/IndexedDB/https_www.fiverr.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/10/07-22:04:40.849 6d4e Level-0 table #5: started
+2024/10/07-22:04:40.850 6d4e Level-0 table #5: 561 bytes OK
+2024/10/07-22:04:40.851 6d4e Delete type=0 #3
+2024/10/07-22:04:40.851 6d4e Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
