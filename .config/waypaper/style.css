@@ -1,0 +1,95 @@
+/* ~/.config/waypaper/style.css */
+
+/* General window styling */
+window {
+    background: rgba(13, 13, 13, 0.92); /* #0D0D0D with slight transparency */
+    color: #e0e0e0;                     /* light gray text */
+    border-radius: 16px;
+    border: 2px solid rgba(40, 40, 40, 0.8);
+    padding: 10px;
+}
+
+/* Header bar */
+headerbar {
+    background: rgba(20, 20, 20, 0.95);
+    color: #e0e0e0;
+    border-radius: 12px;
+    border-bottom: 1px solid rgba(50, 50, 50, 0.8);
+}
+
+/* Buttons */
+button {
+    background: rgba(30, 30, 30, 0.85);
+    color: #e0e0e0;
+    border-radius: 10px;
+    padding: 6px 12px;
+    border: none;
+    font-weight: 500;
+
+    /* Remove GTK default shadows/gradients */
+    box-shadow: none;
+    background-image: none;
+}
+
+button:hover {
+    background: rgba(45, 45, 45, 0.9);
+    box-shadow: none;
+    background-image: none;
+}
+
+button:active {
+    background: rgba(65, 65, 65, 0.95);
+    box-shadow: none;
+    background-image: none;
+}
+
+/* Wallpaper thumbnails */
+.thumbnail {
+    border-radius: 12px;
+    border: 2px solid rgba(40, 40, 40, 0.8);
+    margin: 6px;
+    background: rgba(20, 20, 20, 0.7);
+}
+
+.thumbnail:hover {
+    border: 2px solid #888888; /* light gray highlight */
+}
+
+.thumbnail:checked {
+    border: 2px solid #5eae7d; /* muted green accent for selected */
+}
+
+/* Menus, dropdowns */
+popover,
+menu,
+.menu,
+.popup {
+    background: rgba(13, 13, 13, 0.95);
+    color: #e0e0e0;
+    border-radius: 8px;
+    border: 1px solid rgba(40, 40, 40, 0.8);
+}
+
+menuitem,
+.menuitem {
+    background: transparent;
+    color: #e0e0e0;
+    padding: 6px 12px;
+}
+
+menuitem:hover,
+.menuitem:hover {
+    background: rgba(35, 35, 35, 0.95);
+    color: #5eae7d; /* same green accent */
+}
+
+/* Scrollbars */
+scrollbar slider {
+    background: rgba(70, 70, 70, 0.7);
+    border-radius: 8px;
+}
+
+scrollbar trough {
+    background: rgba(20, 20, 20, 0.5);
+}
+

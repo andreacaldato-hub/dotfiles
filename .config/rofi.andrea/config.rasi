@@ -1,0 +1,63 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    font: "JetBrainsMono Nerd Font 12";
+    drun-display-format: "{name}";
+    disable-history: false;
+    sidebar-mode: false;
+}
+
+* {
+    background: #494949;
+    background-alt: #3a3a3a;
+    foreground: #e0e0e0;
+    accent: #5eae7d;
+    urgent: #ff5555;
+}
+
+window {
+    background-color: @background;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+mainbox {
+    padding: 5px;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @background-alt;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+prompt {
+    text-color: @accent;
+    margin: 0px 6px 0px 0px;
+}
+
+listview {
+    lines: 10;
+    spacing: 4px;
+    scrollbar: true;
+}
+
+element {
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+element normal {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: #0D0D0D;
+}
+

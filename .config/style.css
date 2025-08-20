@@ -1,0 +1,11 @@
+
+.modules-left {
+  margin-left: 10px;     /* push it away from the edge */
+}
+
+.modules-center {
+}
+
+.modules-right {
+  margin-right: 10px;
+}

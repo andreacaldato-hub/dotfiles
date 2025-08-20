@@ -1,0 +1,7 @@
+
+{
+  "modules-left": ["custom/menu", "workspaces", "taskbar"],
+  "modules-center": ["clock", "mpris"],
+  "modules-right": ["network", "pulseaudio", "battery", "tray"]
+  
+}
