@@ -1,0 +1,22 @@
+configuration {
+    font: "JetBrains Mono Nerd 14";
+    show-icons: true;
+
+    /* Timeout: auto cancel immediately */
+    timeout {
+        action: "kb-cancel";
+        delay: 0;
+    }
+
+    /* Filebrowser settings */
+    filebrowser {
+        directories-first: true;
+        sorting-method: "name";
+    }
+
+    /* Optional: enable SSH parsing */
+    parse-known-hosts: true;
+}
+
+@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
+

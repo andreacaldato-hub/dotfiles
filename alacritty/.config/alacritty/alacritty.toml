@@ -1,0 +1,24 @@
+terminal.shell = "zsh"
+[window]
+
+opacity = 0.9
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+decorations_theme_variant = "Light" # "Dark"
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/kanagawa_dragon.toml"
+]
+
+[font]
+
+normal.family = "JetBrains Mono Nerd Font"
+bold.family = "JetBrains Mono Nerd Font"
+italic.family = "JetBrains Mono Nerd Font"
+bold_italic.family = "JetBrains Mono Nerd Font"
+
+size = 14.0
