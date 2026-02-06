@@ -127,6 +127,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 #Alias
 alias grep='grep --color=auto'
+alias lg='lazygit'
 alias ls='eza --icons --group-directories-first'
 alias ll='eza -l --icons --group-directories-first'
 alias la='eza -la --icons --group-directories-first'
