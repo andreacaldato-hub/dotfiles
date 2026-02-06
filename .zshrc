@@ -50,8 +50,26 @@ bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 # FZF + TMUX helpers
 fzf-tmux-session() {
-  local dir=$(find ~ -type d -maxdepth 3 2>/dev/null | fzf) || return
-  local session_name=$(basename "$dir")
+  local dir
+  dir=$(find ~ -type d \
+          ! -path "$HOME/.cache*" \
+          ! -path "$HOME/.gnupg*" \
+          ! -path "$HOME/.gradle*" \
+          ! -path "$HOME/.local*" \
+          ! -path "$HOME/.npm*" \
+          ! -path "$HOME/.pki*" \
+          ! -path "$HOME/.ssh*" \
+          ! -path "$HOME/.texlive*" \
+          ! -path "$HOME/go*" \
+          ! -path "$HOME/yay*" \
+          ! -path "$HOME/.config/*" \
+          2>/dev/null | fzf) || return
+
+  [[ -z "$dir" ]] && return
+
+  local session_name
+  session_name=$(basename "$dir")
+
   if tmux has-session -t "$session_name" 2>/dev/null; then
     [[ -n "$TMUX" ]] && tmux switch-client -t "$session_name" || tmux attach -t "$session_name"
   else
