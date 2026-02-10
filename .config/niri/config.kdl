@@ -369,8 +369,8 @@ binds {
 Super+S hotkey-overlay-title="Taking Screenshot: " {
     spawn "~/.config/niri/scripts/screenshot.sh";
 }
-Super+P hotkey-overlay-title="Color Picker:wl-color-picker " {
-    spawn-sh "wl-color-picker clipboard";
+Super+P hotkey-overlay-title="Color Picker" {
+    spawn-sh "setsid wl-color-picker -c clipboard"
 }
 Super+A hotkey-overlay-title="Opening AppLauncher: rofi " {
         spawn-sh "rofi -show drun";
