@@ -163,7 +163,7 @@
   # POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' ' below.
   typeset -g POWERLEVEL9K_SHOW_RULER=false
   typeset -g POWERLEVEL9K_RULER_CHAR='-'        # reasonable alternative: '·'
-  typeset -g POWERLEVEL9K_RULER_FOREGROUND=240
+  typeset -g POWERLEVEL9K_RULER_FOREGROUND=100
 
   # Filler between left and right prompt on the first prompt line. You can set it to '·' or '-'
   # to make it easier to see the alignment between left and right prompt and to separate prompt
@@ -212,17 +212,17 @@
 
   ##################################[ dir: current directory ]##################################
   # Default current directory color.
-typeset -g POWERLEVEL9K_DIR_FOREGROUND=230  # bright tan
+typeset -g POWERLEVEL9K_DIR_FOREGROUND=255  # bright tan
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_unique
   # Replace removed segment suffixes with this symbol.
   typeset -g POWERLEVEL9K_SHORTEN_DELIMITER=
   # Color of the shortened directory segments.
-  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=174
+  typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=1
   # Color of the anchor directory segments. Anchor segments are never shortened. The first
   # segment is always an anchor.
-  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=174
+  typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=215
   # Display anchor directory segments in bold.
   typeset -g POWERLEVEL9K_DIR_ANCHOR_BOLD=true
   # Don't shorten directories that contain any of these files. They are anchors.

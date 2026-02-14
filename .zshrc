@@ -59,6 +59,7 @@ fzf-tmux-session() {
           ! -path "$HOME/.texlive*" \
           ! -path "$HOME/go*" \
           ! -path "$HOME/yay*" \
+          ! -path "$HOME/.rustup/*" \
           ! -path "$HOME/.config/*" \
           2>/dev/null | fzf) || return
 
@@ -162,7 +163,7 @@ fi
 '
 
 # Make fzf-tab preview window taller
-zstyle ':fzf-tab:*' fzf-flags --preview-window=right:80%:wrap
+zstyle ':fzf-tab:*' fzf-flags --preview-window=right:60%:nowrap
 
 # =============================
 # FZF DEFAULT PREVIEW
@@ -192,13 +193,13 @@ alias fastfetch='fastfetch --config os.jsonc'
 # SYNTAX HIGHLIGHTING COLORS
 # =============================
 typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[command]='fg=#76946A'
-ZSH_HIGHLIGHT_STYLES[builtin]='fg=#76946A'
-ZSH_HIGHLIGHT_STYLES[alias]='fg=#76946A'
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#B63E42'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#C0A36E'
-ZSH_HIGHLIGHT_STYLES[path]='fg=#687FAE'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=#C0A36E'
+ZSH_HIGHLIGHT_STYLES[command]='fg=#88DF51'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#88DF51'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#88DF51'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#E75672'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#CBAD50'
+ZSH_HIGHLIGHT_STYLES[path]='fg=#FFAF5F,bold'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#FFAF5F'
 # =============================
 # FZF INTEGRATION
 # =============================
@@ -208,3 +209,7 @@ eval "$(zoxide init zsh)"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+export PATH=$PATH:$HOME/go/bin
