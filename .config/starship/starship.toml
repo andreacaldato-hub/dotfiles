@@ -1,0 +1,100 @@
+# ─────────────────────────────
+# GLOBAL
+# ─────────────────────────────
+add_newline = false       # removes extra newline above prompt
+format = """
+$directory$git_branch$git_status$package
+$c$cpp$rust$python$nodejs$go$java$lua$docker_context$kubernetes$character
+"""
+
+# ─────────────────────────────
+# DIRECTORY
+# ─────────────────────────────
+# ─────────────────────────────
+# DIRECTORY (with colored folder emoji)
+# ─────────────────────────────
+[directory]
+style = "bold fg:#a6e3a1"
+truncation_length = 4
+truncate_to_repo = true
+format = "[-> $path ]($style)"
+read_only = " "
+# ─────────────────────────────
+# GIT
+# ─────────────────────────────
+[git_branch]
+symbol = " "
+style = "bold fg:#f9e2af"
+format = "($symbol$branch) "    # note the parentheses
+
+[git_status]
+style = "bold fg:#fab387"
+format = "[$all_status$ahead_behind]($style) "
+conflicted = "⚔ "
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕ "
+untracked = "?${count}"
+stashed = "📦 "
+modified = "!${count}"
+staged = "+${count}"
+renamed = "» "
+deleted = "✘ "
+# ─────────────────────────────
+# LANGUAGES
+# ─────────────────────────────
+[nodejs]
+symbol = " "
+style = "fg:#a6e3a1"
+
+[python]
+symbol = " "
+style = "fg:#89b4fa"
+
+[rust]
+symbol = "🦀 "
+style = "fg:#f38ba8"
+
+[c]
+symbol = " "
+style = "fg:#f5c2e7"
+
+[cpp]
+symbol = " "
+style = "fg:#f5c2e7"
+
+[java]
+symbol = " "
+style = "fg:#fab387"
+
+[lua]
+symbol = " "
+style = "fg:#89b4fa"
+
+
+# ─────────────────────────────
+# DEVOPS / CONTAINERS
+# ─────────────────────────────
+[docker_context]
+symbol = " "
+style = "fg:#89dceb"
+
+[kubernetes]
+symbol = "☸ "
+style = "fg:#89b4fa"
+format = "[$symbol$context]($style)"
+
+# ─────────────────────────────
+# PACKAGE VERSION
+# ─────────────────────────────
+[package]
+symbol = "📦 "
+style = "fg:#cdd6f4"
+
+# ─────────────────────────────
+# COMMAND PROMPT CHARACTER
+# ─────────────────────────────
+[character]
+success_symbol = "❯ "
+error_symbol = "❯ "
+

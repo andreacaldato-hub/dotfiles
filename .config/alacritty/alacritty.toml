@@ -1,14 +1,9 @@
 terminal.shell = "zsh"
 
 [window]
-opacity = 0.25
+opacity = 0.5
 padding.x = 10
 padding.y = 10
-
-[general]
-import = [
-    "~/.config/alacritty/themes/themes/sonokai.toml"
-]
 
 [font]
 normal.family = "JetBrains Mono Nerd Font"
