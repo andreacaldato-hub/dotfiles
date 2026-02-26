@@ -1,14 +1,10 @@
 terminal.shell = "zsh"
 
 [window]
-opacity = 0.3
+opacity = 0.0
 padding.x = 10
 padding.y = 10
 
 [font]
-normal.family = "JetBrains Mono Nerd Font"
-bold.family = "JetBrains Mono Nerd Font"
-italic.family = "JetBrains Mono Nerd Font"
-bold_italic.family = "JetBrains Mono Nerd Font"
-size = 14.0
-
+normal = { family = "JetBrainsMono Nerd Font"}
+size = 15
