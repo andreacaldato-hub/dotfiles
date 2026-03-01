@@ -34,6 +34,8 @@ zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 zinit cdreplay -q
+zinit ice wait"0" lucid
+zinit light zsh-users/zsh-syntax-highlighting
 # =============================
 # KEYBINDINGS
 # =============================
