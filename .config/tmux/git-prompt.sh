@@ -1,8 +1,10 @@
-#!/usr/bin/env bash
-# Print "repo_name:branch" for the current pane directory
-pane_dir="$(tmux display-message -p -F "#{pane_current_path}")"
-if [ -d "$pane_dir/.git" ] || git -C "$pane_dir" rev-parse --git-dir >/dev/null 2>&1; then
-    repo_name=$(basename "$(git -C "$pane_dir" rev-parse --show-toplevel)")
-    branch=$(git -C "$pane_dir" rev-parse --abbrev-ref HEAD 2>/dev/null)
-    echo "$repo_name:$branch"
+#!/usr/bin/env zsh
+pane_dir="#{pane_current_path}"
+
+# Only if we're in a git repo
+if git -C "$pane_dir" rev-parse --git-dir >/dev/null 2>&1; then
+  repo=$(basename "$(git -C "$pane_dir" rev-parse --show-toplevel)")
+  # Gitmux handles branch + flags
+  flags=$(~/go/bin/gitmux -C "$pane_dir" -cfg ~/.config/tmux/gitmux.yml)
+  echo "$repo: $flags"
 fi
