@@ -59,7 +59,7 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 export PATH="$HOME/.local/bin:$PATH"
-# =============================
+export PATH="$HOME/go/bin:$PATH"
 # COMPLETION STYLING
 # =============================
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
