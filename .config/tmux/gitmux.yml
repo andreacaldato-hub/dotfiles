@@ -37,4 +37,4 @@ tmux:
   options:
     show_name: true
     branch_max_len: 0
-    hide_clean: true
+    hide_clean: false
