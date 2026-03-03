@@ -1,0 +1,25 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor swap / temp files
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+
+# Ignore logs
+*.log
+
+# Ignore compiled files
+*.pyc
+*.class
+
+bin/
+
+# Ignore zsh / bash history
+*.history
+
+# Ignore eza-themes folder
+.config/eza/eza-themes/
