@@ -1,3 +1,4 @@
+# Only start tmux if it's not already running
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -190,7 +191,7 @@ fzf-tmux-session() {
           ! -path "$HOME/yay*" \
           ! -path "$HOME/.rustup/*" \
           ! -path "$HOME/.config/*" \
-          2>/dev/null | fzf) || return
+          2>/dev/null | fzf --no-preview --ansi --prompt $'\033[33m⚡Session: \033[0m') || return
 
   [[ -z "$dir" ]] && return
 
@@ -208,7 +209,7 @@ zle -N fzf-tmux-session
 fzf-tmux-switch() {
   local session=$(
     tmux list-sessions -F "#{session_name}" 2>/dev/null |
-    fzf --no-preview
+    fzf --no-preview --ansi --prompt $'\033[32m Find: \033[0m'
     ) || return
 
   [[ -n "$session" ]] && (
@@ -228,7 +229,7 @@ fzf-tmux-gitrepo() {
          [[ "$url" == *"github.com/andreacaldato-hub/"* ]]; then
         echo "$repo"
       fi
-    done | fzf
+    done | fzf --no-preview --ansi --prompt $'\033[36m Git: \033[0m'
   ) || return
 
   # exit if nothing selected
@@ -272,3 +273,10 @@ alias cd="z"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
+
+if [ -z "$TMUX" ]; then
+    session_name="andrea"
+    dir="$HOME/andrea"
+
+    exec tmux new-session -A -s "$session_name" -c "$dir"
+fi
