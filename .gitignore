@@ -23,3 +23,4 @@ bin/
 
 # Ignore eza-themes folder
 .config/eza/eza-themes/
+.config/nvim
