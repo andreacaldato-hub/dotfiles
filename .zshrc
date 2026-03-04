@@ -174,84 +174,10 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='nvim'
 # fi
-# FZF + TMUX helpers
-fzf-tmux-session() {
-  local dir
-  dir=$(find ~ -type d \
-          ! -path "$HOME/.cache*" \
-          ! -path "$HOME/.gnupg*" \
-          ! -path "$HOME/.gradle*" \
-          ! -path "$HOME/.local*" \
-          ! -path "$HOME/.npm*" \
-          ! -path "$HOME/*.git*" \
-          ! -path "$HOME/.pki*" \
-          ! -path "$HOME/.ssh*" \
-          ! -path "$HOME/.texlive*" \
-          ! -path "$HOME/go*" \
-          ! -path "$HOME/yay*" \
-          ! -path "$HOME/.rustup/*" \
-          ! -path "$HOME/.config/*" \
-          2>/dev/null | fzf --no-preview --ansi --prompt $'\033[33m⚡Session: \033[0m') || return
-
-  [[ -z "$dir" ]] && return
-
-  local session_name
-  session_name=$(basename "$dir")
-
-  if tmux has-session -t "$session_name" 2>/dev/null; then
-    [[ -n "$TMUX" ]] && tmux switch-client -t "$session_name" || tmux attach -t "$session_name"
-  else
-    [[ -n "$TMUX" ]] && tmux new-session -d -s "$session_name" -c "$dir"; tmux switch-client -t "$session_name" || tmux new-session -s "$session_name" -c "$dir"
-  fi
-}
-zle -N fzf-tmux-session
-
-fzf-tmux-switch() {
-  local session=$(
-    tmux list-sessions -F "#{session_name}" 2>/dev/null |
-    fzf --no-preview --ansi --prompt $'\033[32m Find: \033[0m'
-    ) || return
-
-  [[ -n "$session" ]] && (
-    [[ -n "$TMUX" ]] && tmux switch-client -t "$session" ||
-    tmux attach -t "$session"
-  )
-}
-
-fzf-tmux-gitrepo() {
-  local dir=$(
-    find ~ -type d -name ".git" -prune 2>/dev/null |
-    while read -r gitdir; do
-      repo="${gitdir%/.git}"
-      url=$(git -C "$repo" remote get-url origin 2>/dev/null)
-
-      if [[ "$url" == *"github.com:andreacaldato-hub/"* ]] || \
-         [[ "$url" == *"github.com/andreacaldato-hub/"* ]]; then
-        echo "$repo"
-      fi
-    done | fzf --no-preview --ansi --prompt $'\033[36m Git: \033[0m'
-  ) || return
-
-  # exit if nothing selected
-  [[ -z "$dir" ]] && return
-
-  # session name from folder
-  local session_name
-  session_name=$(basename "$dir")
-
-  # === Attach or create session exactly like fzf-tmux-session ===
-  if tmux has-session -t "$session_name" 2>/dev/null; then
-    [[ -n "$TMUX" ]] && tmux switch-client -t "$session_name" || tmux attach -t "$session_name"
-  else
-    [[ -n "$TMUX" ]] && tmux new-session -d -s "$session_name" -c "$dir"; tmux switch-client -t "$session_name" || tmux new-session -s "$session_name" -c "$dir"
-  fi
-}
-zle -N fzf-tmux-gitrepo
-
-
-bindkey -s '^[G' 'fzf-tmux-gitrepo\n'
-bindkey -s '^[T' 'fzf-tmux-session\n'
-bindkey -s '^[F' 'fzf-tmux-switch\n'
+# FZF + TMUX helpers (~/.local/bin/)
+bindkey -s '^[G' 'tmux-gitrepo\n'
+bindkey -s '^[T' 'tmux-sessionizer\n'
+bindkey -s '^[F' 'tmux-switch\n'
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
