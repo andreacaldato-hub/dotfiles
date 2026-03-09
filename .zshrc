@@ -199,10 +199,6 @@ alias cd="z"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-
-if [ -z "$TMUX" ]; then
-    session_name="andrea"
-    dir="$HOME/andrea"
-
-    exec tmux new-session -A -s "$session_name" -c "$dir"
+if [[ -z $TMUX ]]; then
+  tmux new-session -A -s andrea -c "$HOME/andrea"
 fi

@@ -373,10 +373,15 @@ Super+P hotkey-overlay-title="Color Picker" {
     spawn-sh "setsid wl-color-picker -c clipboard"
 }
 Super+A hotkey-overlay-title="Opening AppLauncher: rofi " {
-        spawn-sh "rofi -show drun";
+        spawn-sh "qs -c noctalia-shell ipc call launcher toggle";
 }
 Super+B hotkey-overlay-title="Opening Spotify: spotify " {
         spawn-sh "spotify";
+}
+Super+W hotkey-overlay-title="Opening wallpaper selector: wallpaper " {
+        spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle";
+}
+Super+C { spawn "firefox" "--new-window" "https://claude.ai"; 
 }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.

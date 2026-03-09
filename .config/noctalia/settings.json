@@ -10,21 +10,21 @@
         "enableClipboardHistory": false,
         "enableSettingsSearch": false,
         "enableWindowsSearch": true,
-        "iconMode": "native",
+        "iconMode": "tabler",
         "ignoreMouseInput": false,
         "pinnedApps": [
         ],
-        "position": "center",
+        "position": "top_center",
         "screenshotAnnotationTool": "",
-        "showCategories": true,
+        "showCategories": false,
         "showIconBackground": true,
         "sortByMostUsed": true,
         "terminalCommand": "launcher",
         "useApp2Unit": false,
-        "viewMode": "grid"
+        "viewMode": "list"
     },
     "audio": {
-        "cavaFrameRate": 60,
+        "cavaFrameRate": 240,
         "mprisBlacklist": [
         ],
         "preferredPlayer": "",
@@ -78,7 +78,7 @@
                     "unfocusedIconsOpacity": 0.5
                 },
                 {
-                    "compactMode": false,
+                    "compactMode": true,
                     "compactShowAlbumArt": true,
                     "compactShowVisualizer": false,
                     "hideMode": "hidden",
@@ -87,9 +87,9 @@
                     "maxWidth": 145,
                     "panelShowAlbumArt": true,
                     "panelShowVisualizer": true,
-                    "scrollingMode": "hover",
+                    "scrollingMode": "always",
                     "showAlbumArt": true,
-                    "showArtistFirst": true,
+                    "showArtistFirst": false,
                     "showProgressRing": true,
                     "showVisualizer": false,
                     "useFixedWidth": false,
@@ -125,11 +125,11 @@
                     "usePrimaryColor": false
                 },
                 {
-                    "colorizeIcons": false,
+                    "colorizeIcons": true,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
                     "maxWidth": 145,
-                    "scrollingMode": "hover",
+                    "scrollingMode": "always",
                     "showIcon": true,
                     "useFixedWidth": false
                 }
@@ -163,21 +163,21 @@
                     "id": "Brightness"
                 },
                 {
-                    "deviceNativePath": "",
+                    "deviceNativePath": "BAT0",
                     "displayMode": "alwaysShow",
                     "hideIfIdle": false,
                     "hideIfNotDetected": true,
                     "id": "Battery",
-                    "showNoctaliaPerformance": false,
-                    "showPowerProfiles": false,
+                    "showNoctaliaPerformance": true,
+                    "showPowerProfiles": true,
                     "warningThreshold": 30
                 },
                 {
                     "colorizeDistroLogo": false,
                     "colorizeSystemIcon": "error",
                     "customIconPath": "",
-                    "enableColorization": true,
-                    "icon": "noctalia",
+                    "enableColorization": false,
+                    "icon": "terminal-2",
                     "id": "ControlCenter",
                     "useDistroLogo": true
                 }
@@ -211,7 +211,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Gruvbox",
+        "predefinedScheme": "Kanagawa",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
@@ -325,10 +325,10 @@
         "avatarImage": "/home/andrea/.face",
         "boxRadiusRatio": 1,
         "compactLockScreen": true,
-        "dimmerOpacity": 0.2,
+        "dimmerOpacity": 0.25,
         "enableLockScreenCountdown": true,
         "enableShadows": true,
-        "forceBlackScreenCorners": false,
+        "forceBlackScreenCorners": true,
         "iRadiusRatio": 1,
         "language": "",
         "lockOnSuspend": true,
@@ -341,7 +341,7 @@
         "shadowOffsetY": 3,
         "showChangelogOnStartup": true,
         "showHibernateOnLockScreen": false,
-        "showScreenCorners": false,
+        "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true,
         "telemetryEnabled": false
     },
@@ -381,8 +381,8 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": false,
-        "forced": false,
+        "enabled": true,
+        "forced": true,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "nightTemp": "6000"
@@ -517,7 +517,7 @@
         "fontFixed": "JetBrainsMono Nerd Font",
         "fontFixedScale": 1.1,
         "networkPanelView": "wifi",
-        "panelBackgroundOpacity": 0.93,
+        "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "settingsPanelMode": "attached",
         "tooltipsEnabled": true,
