@@ -8,6 +8,7 @@ Thumbs.db
 *.tmp
 *.bak
 *.orig
+*.json
 
 # Ignore logs
 *.log
@@ -25,4 +26,3 @@ bin/
 .config/eza/eza-themes/
 .config/nvim
 .config/nvim/.git
-*.json
