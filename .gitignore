@@ -25,3 +25,4 @@ bin/
 .config/eza/eza-themes/
 .config/nvim
 .config/nvim/.git
+.json

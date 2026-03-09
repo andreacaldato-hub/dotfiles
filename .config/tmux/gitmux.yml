@@ -13,7 +13,7 @@ tmux:
   symbols:
     ahead: "↑"
     behind: "↓"
-    clean: "✔"
+    clean: "✓"
     branch: "  "
     hashprefix: ":"
     staged: " "
