@@ -323,6 +323,11 @@ window-rule {
     match app-id="Alacritty"
     open-maximized true
 }
+window-rule {
+    match app-id="com.mitchellh.ghostty"
+    opacity 2.0
+    open-maximized true
+}
 
 window-rule {
     match app-id="firefox"
@@ -662,3 +667,6 @@ Super+U { spawn-sh "qs -c noctalia-shell ipc call plugin:unicode toggle";
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
+
+// include "./noctalia.kdl"
+
