@@ -199,10 +199,6 @@ alias cd="z"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-if [[ -z $TMUX ]]; then
-    echo -n "Open tmux session? [Y/n] "
-    read -r reply
-    if [[ ! $reply =~ ^[Nn]$ ]]; then
-        tmux new-session -A -s andrea -c "$HOME/andrea"
-    fi
+if [[ -z $TMUX ]] && [[ -n $PS1 ]]; then
+    tmux new-session -A -s andrea -c "$HOME/andrea"
 fi
