@@ -415,13 +415,13 @@
     },
     "hooks": {
         "darkModeChange": "",
-        "enabled": false,
+        "enabled": true,
         "performanceModeDisabled": "",
         "performanceModeEnabled": "",
         "screenLock": "",
         "screenUnlock": "",
         "session": "",
-        "startup": "",
+        "startup": "powerProfile enableNoctaliaPerformance",
         "wallpaperChange": ""
     },
     "idle": {
