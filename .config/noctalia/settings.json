@@ -48,7 +48,7 @@
         "density": "comfortable",
         "displayMode": "always_visible",
         "floating": false,
-        "fontScale": 1,
+        "fontScale": 1.0899999999999999,
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
@@ -459,7 +459,7 @@
         "bluetoothHideUnnamedDevices": true,
         "bluetoothRssiPollIntervalMs": 10000,
         "bluetoothRssiPollingEnabled": false,
-        "disableDiscoverability": false,
+        "disableDiscoverability": true,
         "networkPanelView": "wifi",
         "wifiDetailsViewMode": "grid",
         "wifiEnabled": true

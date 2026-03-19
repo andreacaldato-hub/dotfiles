@@ -8,6 +8,13 @@ Thumbs.db
 *.tmp
 *.bak
 *.orig
+# Keep these JSON files (they're part of configs you want to track)
+!lazy-lock.json
+!package.json
+!tsconfig.json
+!*.config.json
+
+# Ignore all other JSON
 *.json
 
 # Ignore logs
