@@ -1,81 +1,91 @@
 # AGENTS.md
 
-This file provides coding guidelines and instructions for agentic coding assistants working in this repository.
+This file provides coding guidelines for agentic coding assistants working in Andrea's repository.
 
-## Repository Overview
+## Repository Structure
 
-This is Andrea's home directory containing personal projects:
-- **C projects**: SDL graphics, socket programming, Unix utilities (cat, grep)
-- **Web projects**: HTML/CSS/JavaScript applications
-- **LeetCode practice**: C solutions for algorithm problems
-- **Configuration**: Dotfiles (zsh, tmux)
+```
+/home/andrea/
+├── dotfiles/                    # Git-tracked configuration files
+│   └── .config/                 # Desktop/terminal configs
+│       ├── nvim/                # Neovim (Lua)
+│       ├── tmux/                # Tmux
+│       ├── ghostty/              # Ghostty terminal
+│       └── ...
+├── projects/                    # C projects
+│   ├── my_cat/                  # Unix cat utility
+│   ├── my_grep/                 # Recursive file search
+│   ├── bouncing_ball/           # SDL3 graphics demo
+│   ├── https_server/            # SSL server (uses Makefile)
+│   └── image_viewer/            # Image viewer
+├── leetcode/                    # C algorithm solutions
+├── HTML_CSS-course/             # HTML/CSS learning
+└── Javascript-course/          # JavaScript learning
+```
 
 ## Build Commands
 
-### C Programs
+### C Programs (Simple)
 
 ```bash
 # Compile single C file
 gcc filename.c -o output
 
-# Compile with SDL3 (graphics programs)
+# Compile with SDL3 (graphics)
 gcc -o program program.c -lSDL3 -lm
 
 # Compile with math library
 gcc -o program program.c -lm
 
-# Run compiled program
+# Run program
 ./program [args]
+```
+
+### C Programs (with Makefile)
+
+```bash
+cd projects/https_server
+make              # Build
+make run          # Run (requires cert.pem, key.pem)
+make dev          # Dev mode (auto-generates certs)
+make clean        # Clean build artifacts
+```
+
+### Running Tests
+
+```bash
+# Manual testing for my_cat
+cd projects/my_cat
+gcc cat.c -o cat
+./cat test_files/test.txt
+
+# Manual testing for my_grep
+cd projects/my_grep
+gcc grep.c -o grep
+./grep
 ```
 
 ### Web Projects
 
 ```bash
-# Open HTML file directly in browser (Firefox)
+# Open HTML in browser
 firefox index.html
-
-# Or use any browser to open the HTML file
 ```
 
-### Testing Individual Programs
-
-```bash
-# For C programs with test files
-cd projects/my_cat
-gcc cat.c -o cat
-./cat test_files/test.txt
-
-# For grep
-cd projects/my_grep
-gcc grep.c -o grep
-./grep
-
-# For http_server
-cd projects/http_server
-gcc main.c -o main
-./main
-```
-
-## Code Style Guidelines
+## Code Style
 
 ### C Programming
 
-#### Indentation and Formatting
-- Use **2 spaces** for indentation
-- Opening brace on same line for functions/control structures
+#### Indentation & Formatting
+- **2 spaces** for indentation
+- Opening brace on same line
 - One blank line between function definitions
-- Max line length: ~80-100 characters
+- Max line length: ~100 characters
 
 ```c
-// Good
 void draw_circle(SDL_Renderer *renderer, struct Circle circle) {
   double x_low = circle.x_center - circle.radius;
   // ...
-}
-
-// Bad - no spacing
-void bad_func(){
-    int x=0;
 }
 ```
 
@@ -83,44 +93,38 @@ void bad_func(){
 - **Functions**: `snake_case` (e.g., `draw_circle`, `step_forward`)
 - **Variables**: `snake_case` (e.g., `x_center`, `circle_radius`)
 - **Structs**: `PascalCase` (e.g., `struct Circle`, `struct Node`)
-- **Constants/Macros**: `UPPER_SNAKE_CASE` (e.g., `BUFFER_SIZE`, `MAX_WIDTH`)
-- **Global variables**: descriptive names, avoid generic names like `tmp`
+- **Constants/Macros**: `UPPER_SNAKE_CASE` (e.g., `BUFFER_SIZE`)
+- **Global variables**: descriptive names
 
 #### Includes
-- Group by type: system headers, then local headers
+- Group: system headers first, then local headers
 - Sort alphabetically within groups
-- Use angle brackets for system headers, quotes for local headers
+- Angle brackets for system, quotes for local
 
 ```c
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_events.h>
-#include <SDL3/SDL_video.h>
 #include <stdio.h>
-#include <stdlib.h>
+#include "my_header.h"
 ```
 
 #### Error Handling
-- Use `perror()` for system-level errors (file operations, sockets)
-- Print user-friendly error messages with context
-- Return early on errors rather than deeply nesting
-- Free allocated memory before returning on error
+- Check return values immediately
+- Use `perror()` for system errors
+- Print user-friendly messages with context
+- Return early on errors
 
 ```c
-// Good
 FILE *file = fopen(path, "r");
 if (!file) {
   perror("Could not open file");
   return -1;
 }
-
-// Bad - missing error handling
-FILE *file = fopen(path, "r");
-// continue without checking...
 ```
 
 #### Memory Management
 - Always check `malloc()` return values
-- Free memory before returning from functions when done
+- Free memory before returning
 - Set pointers to `NULL` after freeing
 
 ```c
@@ -129,18 +133,17 @@ if (!ptr) {
   perror("malloc failed");
   return -1;
 }
-// ... use ptr ...
 free(ptr);
 ptr = NULL;
 ```
 
 ### HTML
 
-#### Structure
-- Use HTML5 doctype: `<!doctype html>`
+- Use `<!doctype html>`
 - Include charset and viewport meta tags
-- Use semantic HTML elements (`<header>`, `<main>`, `<nav>`)
-- Keep attributes in consistent order: `type`, `id`, `class`, `src`, `href`
+- Use semantic elements (`<header>`, `<main>`, `<nav>`)
+- Lowercase tags and attributes
+- Attributes order: `type`, `id`, `class`, `src`, `href`
 
 ```html
 <!doctype html>
@@ -149,108 +152,97 @@ ptr = NULL;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page Title</title>
-    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <header>Title</header>
-    <main>
-      <!-- content -->
-    </main>
-    <script src="app.js"></script>
+    <main><!-- content --></main>
   </body>
 </html>
 ```
 
 ### CSS
 
-#### Naming and Organization
-- Use **kebab-case** for class names (e.g., `.task-div`, `#add-button`)
+- Use **kebab-case** for class names (e.g., `.video-preview`, `.sidebar-link`)
 - Group related styles together
-- Use CSS custom properties (variables) for repeated values
 - Sort properties alphabetically within rules
 
 ```css
-/* Good */
-.task-div {
-  align-items: center;
-  display: flex;
-  padding: 8px 12px;
-}
-
-/* Bad - inconsistent naming */
-.taskDiv {
-  display: flex;
-  padding: 8px 12px;
+.youtube-button {
+  background-color: #CC0001;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+  height: 36px;
 }
 ```
 
-#### Selectors
-- Prefer class selectors over element selectors
-- Avoid overly specific selectors
-- Use BEM naming when nesting is needed
+### Lua (Neovim Config)
 
-### JavaScript
+- **2 spaces** indentation
+- Use `pcall(require, ...)` for optional modules
+- Local variables for module-scoped state
+- Group related settings together
 
-#### Formatting
-- Use `const` by default, `let` when reassignment needed
-- Avoid `var`
-- Use template literals for string concatenation
-- Use arrow functions for callbacks
-
-```javascript
-// Good
-const handleClick = () => {
-  const text = input.value.trim();
-  if (!text) return;
-  // ...
-};
-
-// Bad
-var handleClick = function() {
-  var text = input.value.trim();
-  if (text == "") return;
-  // ...
-};
+```lua
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.uv.fs_stat(lazypath) then
+  -- clone repo
+end
+vim.opt.rtp:prepend(lazypath)
 ```
 
-#### DOM Manipulation
-- Cache DOM references outside event handlers
-- Use event delegation when appropriate
-- Handle null/undefined cases
+### General Principles
 
-```javascript
-// Good
-const btn = document.getElementById("addButton");
-btn.addEventListener("click", () => {
-  const text = input.value.trim();
-  if (!text) return;
-  // ...
-});
-```
-
-## General Principles
-
-1. **Simplicity first**: Write clear, straightforward code
-2. **Comments**: Document the "why", not the "what"
+1. **Simplicity first**: Clear, straightforward code
+2. **Document "why"**: Comments should explain intent, not mechanics
 3. **Consistency**: Match existing code style in each project
-4. **No magic numbers**: Use named constants instead of bare numbers
-5. **Early returns**: Handle error cases first and exit early
-6. **Resource cleanup**: Always close files, free memory, release resources
+4. **No magic numbers**: Use named constants
+5. **Early returns**: Handle error cases first
+6. **Resource cleanup**: Close files, free memory, release resources
 
-## Project-Specific Notes
+### Project-Specific Notes
 
-### SDL3 Graphics Programs
+#### SDL3 Graphics
 - Include `<SDL3/SDL_oldnames.h>` for compatibility
 - Use `SDL_FRect` for floating-point rectangles
 - Call `SDL_Init()` before creating windows
-- Process events in a loop with `SDL_PollEvent()`
+- Process events with `SDL_PollEvent()`
 
-### Socket Programming
-- Always check return values of `socket()`, `bind()`, `listen()`, `accept()`
+#### Socket Programming
+- Always check `socket()`, `bind()`, `listen()`, `accept()` return values
 - Use `perror()` for error reporting
 - Free `malloc()`'d socket structures
 
-### Unix Utilities
+#### Unix Utilities
 - Follow POSIX conventions for flags (e.g., `-n` for line numbers)
 - Support stdin when no files specified
-- Handle file open errors gracefully
+- Handle file errors gracefully
+
+## Neovim Configuration
+
+The Neovim config uses lazy.nvim plugin manager with modular structure:
+
+```
+lua/
+├── config/
+│   ├── lazy.lua      # Plugin manager bootstrap
+│   ├── options.lua    # Global settings
+│   ├── keymaps.lua   # Keybindings
+│   └── autocmds.lua  # Autocommands
+└── plugins/
+    ├── colorscheme.lua
+    ├── lsp/          # Language Server Protocol
+    ├── git/          # Git integration
+    ├── utils/        # Utility plugins
+    └── ui/           # UI plugins
+```
+
+When editing Lua files, reference `lua/config/lazy.lua` for the plugin spec structure.
+
+## Tmux Configuration
+
+- Prefix: `C-Space` (not default `C-b`)
+- Uses tpm plugin manager
+- Configuration: `~/.config/tmux/tmux.conf`
+- Reload with `tmux source-file ~/.config/tmux/tmux.conf`
