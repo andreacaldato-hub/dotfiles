@@ -358,7 +358,7 @@
         "animationDisabled": false,
         "animationSpeed": 1.5,
         "autoStartAuth": false,
-        "avatarImage": "/home/andrea/Pictures/Wallpapers/k1ac1xpb31wy.png",
+        "avatarImage": "/home/andrea/Pictures/Wallpapers/tokyonight-backgrounds/operating-systems/1920x1080/arch.png",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -664,6 +664,19 @@
                 ],
                 "path": "/home/andrea/Pictures/Wallpapers/k1ac1xpb31wy.png",
                 "useWallpaperColors": true
+            },
+            {
+                "colorScheme": "Tokyo Night",
+                "darkMode": true,
+                "generationMethod": "monochrome",
+                "paletteColors": [
+                    "#7aa2f7",
+                    "#bb9af7",
+                    "#9ece6a",
+                    "#f7768e"
+                ],
+                "path": "/home/andrea/Pictures/Wallpapers/tokyonight-wallpapers/GLaDOS_original.jpeg",
+                "useWallpaperColors": false
             }
         ],
         "fillColor": "#000000",
