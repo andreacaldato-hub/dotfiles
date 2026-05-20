@@ -6,6 +6,7 @@
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://yalter.github.io/niri/Configuration:-Input
+//spawn-at-startup "xwayland-satellite"
 workspace "Main"
 workspace "2-Browser"  
 workspace "3-Other"
@@ -17,9 +18,8 @@ input {
 	    repeat-rate 35
         xkb {
              layout "us"
-	     variant "intl"
-	     //options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
-        }
+	     variant "intl" //options "grp:win_space_toggle,compose:ralt,ctrl:nocaps" }
+     }
 
         // Enable numlock on startup, omitting this setting disables it.
         //numlock
@@ -157,7 +157,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 2
+        width 3
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -165,7 +165,10 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#3D3D3D" 
+        //#98A4B3
+        //#3D3D3D
+        //active-color "#1A1B2A" 
+        active-color "black"
 
         // Color of the ring on inactive monitors.
         //
@@ -195,7 +198,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         off
 
-        width 4
+        width 2
         active-color "#ffc87f"
         inactive-color "#505050"
 
@@ -368,8 +371,8 @@ window-rule {
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    geometry-corner-radius12
+window-rule {
+    geometry-corner-radius 5
     clip-to-geometry true
 }
 
@@ -677,4 +680,4 @@ Super+U { spawn-sh "qs -c noctalia-shell ipc call plugin:unicode toggle";
 }
 
 // include "./noctalia.kdl"
-
+//spawn-at-startup "xwayland-satellite"

@@ -6,7 +6,6 @@ import qs.Services.UI
 import qs.Services.System
 import qs.Services.Compositor
 import qs.Widgets
-import Quickshell.Io
 
 NIconButton {
     id: root
@@ -19,7 +18,7 @@ NIconButton {
     property int sectionWidgetsCount: 0
 
     icon: "camera"
-    tooltipText: pluginApi?.tr("tooltip") || "Take a screenshot"
+    tooltipText: pluginApi?.tr("tooltip")
     tooltipDirection: BarService.getTooltipDirection()
     baseSize: Style.capsuleHeight
     applyUiScale: false
@@ -36,42 +35,13 @@ NIconButton {
         pluginApi?.manifest?.metadata?.defaultSettings?.mode || 
         "region"
 
-    Process {
-        id: screenshotProcess
-        onExited: code => {
-            if (code === 0) {
-                ToastService.showNotice(pluginApi?.tr("notification.title"), pluginApi?.tr("notification.success"), "camera", 3000);
-            }
-        }
-    }
-
-    function takeScreenshot() {
-        if (screenshotProcess.running) return;
-
-        var args = [];
-        if (CompositorService.isHyprland) {
-            args = ["hyprshot", "--freeze", "--clipboard-only", "--mode", screenshotMode, "--silent"];
-        } else if (CompositorService.isNiri) {
-            args = ["niri", "msg", "action", "screenshot"];
-        } else if (CompositorService.isSway) {
-            args = ["grimshot", "copy", "area"];
-
-            if (screenshotMode === "screen" || screenshotMode === "fullscreen") {
-                args = ["grimshot", "copy", "output"];
-            } else if (screenshotMode === "window") {
-                args = ["grimshot", "copy", "window"];
-            }
-        } else {
-            // Fallback to hyprshot for other compositors
-            args = ["hyprshot", "--freeze", "--clipboard-only", "--mode", screenshotMode, "--silent"];
-        }
-
-        screenshotProcess.command = args;
-        screenshotProcess.running = true;
+    ScreenshotHelper {
+        id: helper
+        pluginApi: root.pluginApi
     }
 
     onClicked: {
-        takeScreenshot();
+        helper.takeScreenshot(root.screenshotMode);
     }
 
     onRightClicked: {
@@ -81,19 +51,49 @@ NIconButton {
     NPopupContextMenu {
         id: contextMenu
 
-        model: [
-            {
+        model: {
+            var items = [
+                {
+                    "label": pluginApi?.tr("tooltip"),
+                    "action": "take-screenshot",
+                    "icon": "camera"
+                }
+            ];
+
+            if (CompositorService.isHyprland) {
+                items.push({
+                    "label": pluginApi?.tr("actions.active-window"),
+                    "action": "take-screenshot-active-window",
+                    "icon": "window"
+                });
+
+                items.push({
+                    "label": pluginApi?.tr("actions.active-screen"),
+                    "action": "take-screenshot-active-screen",
+                    "icon": "screen-share"
+                });
+            }
+
+            items.push({
                 "label": I18n.tr("actions.widget-settings"),
                 "action": "widget-settings",
                 "icon": "settings"
-            },
-        ]
+            });
+
+            return items;
+        }
 
         onTriggered: action => {
             contextMenu.close();
             PanelService.closeContextMenu(screen);
 
-            if (action === "widget-settings") {
+            if (action === "take-screenshot") {
+                helper.takeScreenshot(root.screenshotMode);
+            } else if (action === "take-screenshot-active-window") {
+                helper.takeScreenshot("active-window");
+            } else if (action === "take-screenshot-active-screen") {
+                helper.takeScreenshot("active-screen");
+            } else if (action === "widget-settings") {
                 BarService.openPluginSettings(screen, pluginApi.manifest);
             }
         }

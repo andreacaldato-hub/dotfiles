@@ -11,7 +11,7 @@
         "enableClipboardChips": true,
         "enableClipboardHistory": false,
         "enableClipboardSmartIcons": true,
-        "enableSessionSearch": true,
+        "enableSessionSearch": false,
         "enableSettingsSearch": false,
         "enableWindowsSearch": true,
         "iconMode": "native",
@@ -19,13 +19,13 @@
         "overviewLayer": true,
         "pinnedApps": [
         ],
-        "position": "top_center",
+        "position": "center",
         "screenshotAnnotationTool": "",
-        "showCategories": false,
+        "showCategories": true,
         "showIconBackground": true,
         "sortByMostUsed": true,
         "terminalCommand": "launcher",
-        "viewMode": "grid"
+        "viewMode": "list"
     },
     "audio": {
         "mprisBlacklist": [
@@ -42,8 +42,8 @@
     "bar": {
         "autoHideDelay": 500,
         "autoShowDelay": 150,
-        "backgroundOpacity": 0,
-        "barType": "simple",
+        "backgroundOpacity": 0.92,
+        "barType": "floating",
         "capsuleColorKey": "secondary",
         "capsuleOpacity": 0.06,
         "contentPadding": 18,
@@ -71,11 +71,11 @@
         "rightClickFollowMouse": true,
         "screenOverrides": [
         ],
-        "showCapsule": true,
+        "showCapsule": false,
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": true,
-        "widgetSpacing": 7,
+        "widgetSpacing": 11,
         "widgets": {
             "center": [
                 {
@@ -85,6 +85,7 @@
                     "maxWidth": 145,
                     "scrollingMode": "always",
                     "showIcon": true,
+                    "showText": true,
                     "textColor": "none",
                     "useFixedWidth": false
                 },
@@ -192,6 +193,7 @@
                 {
                     "colorizeDistroLogo": false,
                     "colorizeSystemIcon": "error",
+                    "colorizeSystemText": "none",
                     "customIconPath": "",
                     "enableColorization": false,
                     "icon": "terminal-2",
@@ -226,13 +228,14 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "monochrome",
+        "generationMethod": "muted",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Tokyo Night",
+        "predefinedScheme": "Nord",
         "schedulingMode": "off",
-        "useWallpaperColors": false
+        "syncGsettings": true,
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -416,6 +419,7 @@
         "showHibernateOnLockScreen": false,
         "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true,
+        "smoothScrollEnabled": true,
         "telemetryEnabled": false
     },
     "hooks": {
@@ -446,6 +450,7 @@
     },
     "location": {
         "analogClockInCalendar": false,
+        "autoLocate": false,
         "firstDayOfWeek": 1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
@@ -456,10 +461,10 @@
         "use12hourFormat": false,
         "useFahrenheit": false,
         "weatherEnabled": true,
-        "weatherShowEffects": true
+        "weatherShowEffects": true,
+        "weatherTaliaMascotAlways": false
     },
     "network": {
-        "airplaneModeEnabled": false,
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": true,
@@ -681,7 +686,8 @@
         ],
         "fillColor": "#000000",
         "fillMode": "crop",
-        "hideWallpaperFilenames": false,
+        "hideWallpaperFilenames": true,
+        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
         ],
         "overviewBlur": 0.4,
@@ -712,7 +718,7 @@
         "wallhavenCategories": "000",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "000",
-        "wallhavenQuery": "",
+        "wallhavenQuery": "master chief",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
