@@ -194,8 +194,9 @@ bindkey -s '^[F' 'tmux-switch\n'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll="eza -l --icons --group-directories-first"
-alias la="eza -la --icons --group-directories-first"
+alias ll="eza -l --icons --long --git --group-directories-first"
+alias la="eza -la --icons --long --git --group-directories-first"
+alias neofetch="clear && neofetch"
 # alias cd="z"
 
 eval "$(fzf --zsh)"
@@ -203,3 +204,4 @@ eval "$(zoxide init zsh)"
 if [[ -z $TMUX ]] && [[ -n $PS1 ]]; then
     tmux new-session -A -s andrea -c "$HOME/andrea"
 fi
+neofetch

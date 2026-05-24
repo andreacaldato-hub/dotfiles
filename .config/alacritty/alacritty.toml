@@ -1,12 +1,85 @@
 terminal.shell = "zsh"
-
 [window]
-opacity = 0.7
-padding.x = 10
-padding.y = 10
+padding = { x = 15, y = 10}
+opacity = 0.9
 
-[font.normal]
-family = "JetBrainsMono Nerd Font"
+#[window.decorations]
+# "None" for borderless, "Full" for native title bar
+#value = "Full"
 
 [font]
-size = 14.0
+size = 14
+builtin_box_drawing = true
+normal = {family = "JetBrainsMono Nerd Font", style = "SemiBold"}
+bold = {family = "JetBrainsMono Nerd Font", style = "SemiBold"}
+italic = {style = "Italic" }
+
+[font.offset]
+y = 1   # subtle line spacing
+
+#[colors.primary]
+#foreground = "#bfbdb6"
+#background = "#0b0e14"
+#
+#[colors.cursor]
+#text = "#0b0e14"
+#cursor = "#bfbdb6"
+#
+#[colors.selection]
+#text = "#bfbdb6"
+#background = "#1b3a5b"
+#
+#[colors.normal]
+#black = "#1e232b"
+#red = "#ea6c73"
+#green = "#7fd962"
+#yellow = "#f9af4f"
+#blue = "#53bdfa"
+#magenta = "#cda1fa"
+#cyan = "#90e1c6"
+#white = "#c7c7c7"
+#
+#[colors.bright]
+#black = "#686868"
+#red = "#f07178"
+#green = "#aad94c"
+#yellow = "#ffb454"
+#blue = "#59c2ff"
+#magenta = "#d2a6ff"
+#cyan = "#95e6cb"
+#white = "#ffffff"
+# Ayu × Catppuccin blended palette
+
+# Colors (Noctalia)
+
+[colors.bright]
+black = '#686868'
+blue = '#73d0ff'
+cyan = '#95e6cb'
+green = '#d5ff80'
+magenta = '#dfbfff'
+red = '#f28779'
+white = '#ffffff'
+yellow = '#ffd173'
+
+[colors.cursor]
+cursor = '#ffcc66'
+text = '#1f2430'
+
+[colors.normal]
+black = '#171b24'
+blue = '#6dcbfa'
+cyan = '#90e1c6'
+green = '#87d96c'
+magenta = '#dabafa'
+red = '#ed8274'
+white = '#c7c7c7'
+yellow = '#facc6e'
+
+[colors.primary]
+background = '#0b0e14'
+foreground = '#d1d1c7'
+
+[colors.selection]
+background = '#0b0e14'
+text = '#1f2430'
