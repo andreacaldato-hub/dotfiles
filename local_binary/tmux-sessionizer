@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+if [[ $# -eq 1 ]]; then
+  selected=$1
+else
+  selected=$( (
+    echo "$HOME"
+    fd --type d --max-depth 5 \
+      --exclude .git --exclude .cache --exclude go --exclude yay --exclude .cargo \
+      --exclude .go --exclude .npm --exclude .rustup \
+      --exclude .oh-my-zsh --exclude .bun --exclude .texlive \
+      --hidden --no-ignore \
+      . ~ | awk -F'/' "
+      BEGIN { home = \"$HOME\" }
+      {
+        path = \$0
+        rest = substr(path, length(home) + 2)
+        split(rest, parts, \"/\")
+        if (substr(parts[1], 1, 1) == \".\") next
+        print path
+      }
+    "
+  ) | fzf --color='hl:#FE8E40,hl+:#FE8E40' --no-preview --ansi --prompt $'\033[33m⚡Session: \033[0m')
+fi
+[[ -z "$selected" ]] && exit 0
+selected="${selected%/}"
+session_name=$(basename "$selected" | tr . _)
+if ! tmux has-session -t "$session_name" 2>/dev/null; then
+  tmux new-session -d -s "$session_name" -c "$selected"
+fi
+[[ -n "$TMUX" ]] && tmux switch-client -t "$session_name" || tmux attach -t "$session_name"
+

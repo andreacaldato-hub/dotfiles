@@ -23,7 +23,7 @@ tmux:
     insertions: "+"
     deletions: "-"
   styles:
-    branch: "#[fg=#E2CCA9,nobold]"
+    branch: "#[fg=#90E1C6,nobold]"
     state: "#[fg=red,nobold]"
     staged: "#[fg=green,nobold]"
     conflict: "#[fg=red,nobold]"
