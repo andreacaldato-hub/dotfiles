@@ -13,8 +13,8 @@ ZSH_THEME="robbyrussell"
 # =============================
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [[ ! -d "$ZINIT_HOME" ]]; then
-    mkdir -p "$(dirname $ZINIT_HOME)"
-    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+  mkdir -p "$(dirname $ZINIT_HOME)"
+  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 source "${ZINIT_HOME}/zinit.zsh"
 # =============================
@@ -62,6 +62,8 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 # COMPLETION STYLING
 # =============================
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
@@ -197,11 +199,16 @@ bindkey -s '^[F' 'tmux-switch\n'
 alias ll="eza -l --icons --long --git --group-directories-first"
 alias la="eza -la --icons --long --git --group-directories-first"
 alias neofetch="clear && neofetch"
+alias cd="z"
 # alias cd="z"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 if [[ -z $TMUX ]] && [[ -n $PS1 ]]; then
-    tmux new-session -A -s andrea -c "$HOME/andrea"
+  tmux new-session -A -s andrea -c "$HOME/andrea"
 fi
 neofetch
+export PATH="$HOME/.aftman/bin:$PATH"
+
+# opencode
+export PATH=/home/andrea/.opencode/bin:$PATH
