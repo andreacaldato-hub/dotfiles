@@ -42,20 +42,20 @@
     "bar": {
         "autoHideDelay": 100,
         "autoShowDelay": 0,
-        "backgroundOpacity": 0.92,
-        "barType": "floating",
-        "capsuleColorKey": "tertiary",
+        "backgroundOpacity": 0.18,
+        "barType": "simple",
+        "capsuleColorKey": "none",
         "capsuleOpacity": 0.06,
-        "contentPadding": 15,
+        "contentPadding": 5,
         "density": "comfortable",
-        "displayMode": "auto_hide",
+        "displayMode": "always_visible",
         "enableExclusionZoneInset": false,
         "fontScale": 1.0899999999999999,
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
         "marginHorizontal": 8,
-        "marginVertical": 6,
+        "marginVertical": 12,
         "middleClickAction": "none",
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
@@ -75,7 +75,7 @@
         "showOnWorkspaceSwitch": false,
         "showOutline": false,
         "useSeparateOpacity": true,
-        "widgetSpacing": 11,
+        "widgetSpacing": 3,
         "widgets": {
             "center": [
                 {
@@ -228,14 +228,14 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "muted",
+        "generationMethod": "monochrome",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
         "predefinedScheme": "Ayu",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -718,7 +718,7 @@
         "wallhavenCategories": "000",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "000",
-        "wallhavenQuery": "master chief",
+        "wallhavenQuery": "dark",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",

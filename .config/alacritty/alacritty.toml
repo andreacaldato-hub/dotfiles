@@ -1,7 +1,7 @@
 terminal.shell = "zsh"
 [window]
-padding = { x = 15, y = 11}
-opacity = 0.9
+padding = { x = 15, y = 4}
+opacity = 0.5
 
 #[window.decorations]
 # "None" for borderless, "Full" for native title bar
@@ -50,36 +50,30 @@ y = 2   # subtle line spacing
 #white = "#ffffff"
 # Ayu × Catppuccin blended palette
 
-# Colors (Noctalia)
-
-[colors.bright]
-black = '#686868'
-blue = '#73d0ff'
-cyan = '#95e6cb'
-green = '#d5ff80'
-magenta = '#dfbfff'
-red = '#f28779'
-white = '#ffffff'
-yellow = '#ffd173'
-
-[colors.cursor]
-cursor = '#ffcc66'
-text = '#1f2430'
-
-[colors.normal]
-black = '#171b24'
-blue = '#6dcbfa'
-cyan = '#90e1c6'
-green = '#87d96c'
-magenta = '#dabafa'
-red = '#ed8274'
-white = '#c7c7c7'
-yellow = '#facc6e'
+[colors]
+draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = '#0b0e14'
-foreground = '#d1d1c7'
+background = "0x101010"
+foreground = "0xb0b0b0"
 
-[colors.selection]
-background = '#0b0e14'
-text = '#1f2430'
+[colors.normal]
+black   = "0x1a1a1a"
+red     = "0x7a4a4a"
+green   = "0x4a6a50"
+yellow  = "0x6e5c38"
+blue    = "0x3d5068"
+magenta = "0x5a4a6a"
+cyan    = "0x3d5a58"
+white   = "0xb0b0b0"
+
+[colors.bright]
+black   = "0x333333"
+red     = "0x8a5a5a"
+green   = "0x5a7a60"
+yellow  = "0x8a7248"
+blue    = "0x4d6078"
+magenta = "0x6a5a7a"
+cyan    = "0x4d6a68"
+white   = "0xd4d4d4"
+

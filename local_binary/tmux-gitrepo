@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-dir=$(fd --hidden --no-ignore --max-depth 8 '^HEAD$' ~ | \
-  grep '/\.git/HEAD$' | \
-  sed 's|/.git/HEAD$||' | \
+dir=$(fd --hidden --no-ignore --max-depth 8 '^HEAD$' ~ |
+  grep '/\.git/HEAD$' |
+  sed 's|/.git/HEAD$||' |
   awk -F'/' "
     BEGIN { home = \"$HOME\" }
     {
@@ -11,14 +11,14 @@ dir=$(fd --hidden --no-ignore --max-depth 8 '^HEAD$' ~ | \
       if (substr(parts[1], 1, 1) == \".\") next
       print path
     }
-  " | \
+  " |
   xargs -P8 -I{} bash -c '
     url=$(git -C "{}" remote get-url origin 2>/dev/null)
     if [[ "$url" == *"github.com:andreacaldato-hub/"* ]] || \
        [[ "$url" == *"github.com/andreacaldato-hub/"* ]]; then
       echo "{}"
     fi
-  ' | \
-  fzf --color='hl:#FE8E40,hl+:#FE8E40' --no-preview --ansi --prompt $'\033[36m Git: \033[0m')
+  ' |
+  fzf --color='hl:#CBA85E,hl+:#CBA85E' --no-preview --ansi --prompt $'\033[36m Git: \033[0m')
 [[ -z "$dir" ]] && exit 0
 tmux-sessionizer "$dir"

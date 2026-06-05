@@ -19,7 +19,7 @@ else
         print path
       }
     "
-  ) | fzf --color='hl:#FE8E40,hl+:#FE8E40' --no-preview --ansi --prompt $'\033[33m⚡Session: \033[0m')
+  ) | fzf --color='hl:#CBA85E,hl+:#CBA85E' --no-preview --ansi --prompt $'\033[33m⚡Session: \033[0m')
 fi
 [[ -z "$selected" ]] && exit 0
 selected="${selected%/}"
@@ -28,4 +28,3 @@ if ! tmux has-session -t "$session_name" 2>/dev/null; then
   tmux new-session -d -s "$session_name" -c "$selected"
 fi
 [[ -n "$TMUX" ]] && tmux switch-client -t "$session_name" || tmux attach -t "$session_name"
-
