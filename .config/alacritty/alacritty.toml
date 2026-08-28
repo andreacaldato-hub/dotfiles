@@ -1,79 +1,81 @@
-terminal.shell = "zsh"
-[window]
-padding = { x = 15, y = 4}
-opacity = 0.5
+[terminal]
 
-#[window.decorations]
-# "None" for borderless, "Full" for native title bar
-#value = "Full"
+shell = "zsh"
+
+
+[window]
+
+padding         = { x = 15, y = 4 }
+opacity         = 0.4
+# decorations: "None" for borderless, "Full" for native title bar
+# decorations = "Full"
+
 
 [font]
-size = 14
+
+size              = 14
 builtin_box_drawing = true
-normal = {family = "JetBrainsMono Nerd Font", style = "SemiBold"}
-bold = {family = "JetBrainsMono Nerd Font", style = "SemiBold"}
-italic = {style = "Italic" }
+
+
+[font.normal]
+
+family = "JetBrainsMono Nerd Font"
+style  = "SemiBold"
+
+
+[font.bold]
+
+family = "JetBrainsMono Nerd Font"
+style  = "SemiBold"
+
+
+[font.italic]
+
+style = "Italic"
+
 
 [font.offset]
-y = 2   # subtle line spacing
 
-#[colors.primary]
-#foreground = "#bfbdb6"
-#background = "#0b0e14"
-#
-#[colors.cursor]
-#text = "#0b0e14"
-#cursor = "#bfbdb6"
-#
-#[colors.selection]
-#text = "#bfbdb6"
-#background = "#1b3a5b"
-#
-#[colors.normal]
-#black = "#1e232b"
-#red = "#ea6c73"
-#green = "#7fd962"
-#yellow = "#f9af4f"
-#blue = "#53bdfa"
-#magenta = "#cda1fa"
-#cyan = "#90e1c6"
-#white = "#c7c7c7"
-#
-#[colors.bright]
-#black = "#686868"
-#red = "#f07178"
-#green = "#aad94c"
-#yellow = "#ffb454"
-#blue = "#59c2ff"
-#magenta = "#d2a6ff"
-#cyan = "#95e6cb"
-#white = "#ffffff"
-# Ayu × Catppuccin blended palette
+y = 2  # subtle line spacing
+
 
 [colors]
+
 draw_bold_text_with_bright_colors = true
 
+
 [colors.primary]
-background = "0x101010"
-foreground = "0xb0b0b0"
+
+background = "0x1d1f21"
+foreground = "0xc5c8c6"
+
+
+[colors.cursor]
+
+text   = "0x1d1f21"
+cursor = "0xc5c8c6"
+
 
 [colors.normal]
-black   = "0x1a1a1a"
-red     = "0x7a4a4a"
-green   = "0x4a6a50"
-yellow  = "0x6e5c38"
-blue    = "0x3d5068"
-magenta = "0x5a4a6a"
-cyan    = "0x3d5a58"
-white   = "0xb0b0b0"
+
+black   = "0x1d1f21"
+red     = "0xcc6666"
+green   = "0xb5bd68"
+yellow  = "0xe8c56d"
+blue    = "0x81a2be"
+magenta = "0xb294bb"
+cyan    = "0x8abeb7"
+white   = "0xc5c8c6"
+
 
 [colors.bright]
-black   = "0x333333"
-red     = "0x8a5a5a"
-green   = "0x5a7a60"
-yellow  = "0x8a7248"
-blue    = "0x4d6078"
-magenta = "0x6a5a7a"
-cyan    = "0x4d6a68"
-white   = "0xd4d4d4"
+
+black   = "0x666666"
+red     = "0xd54e53"
+green   = "0xb9ca4a"
+yellow  = "0xe7c547"
+blue    = "0x7aa6da"
+magenta = "0xc397d8"
+cyan    = "0x70c0b1"
+white   = "0xeaeaea"
 

@@ -48,7 +48,7 @@
         "capsuleOpacity": 0.06,
         "contentPadding": 5,
         "density": "comfortable",
-        "displayMode": "always_visible",
+        "displayMode": "auto_hide",
         "enableExclusionZoneInset": false,
         "fontScale": 1.0899999999999999,
         "frameRadius": 12,
@@ -682,6 +682,20 @@
                 ],
                 "path": "/home/andrea/Pictures/Wallpapers/tokyonight-wallpapers/GLaDOS_original.jpeg",
                 "useWallpaperColors": false
+            },
+            {
+                "appearance": "dark",
+                "colorScheme": "Ayu",
+                "darkMode": true,
+                "generationMethod": "monochrome",
+                "paletteColors": [
+                    "#ffffff",
+                    "#c6c6c6",
+                    "#e2e2e2",
+                    "#ffb4ab"
+                ],
+                "path": "/home/andrea/Pictures/Wallpapers/N58Abd.jpg",
+                "useWallpaperColors": true
             }
         ],
         "fillColor": "#000000",
