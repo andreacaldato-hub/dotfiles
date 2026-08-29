@@ -1,3 +1,5 @@
+[general]
+
 [terminal]
 
 shell = "zsh"
@@ -5,15 +7,15 @@ shell = "zsh"
 
 [window]
 
-padding         = { x = 15, y = 4 }
-opacity         = 0.4
+padding         = { x = 15, y = 6 }
+opacity         = 0.3
 # decorations: "None" for borderless, "Full" for native title bar
 # decorations = "Full"
 
 
 [font]
 
-size              = 14
+size              = 13.9
 builtin_box_drawing = true
 
 
@@ -36,7 +38,7 @@ style = "Italic"
 
 [font.offset]
 
-y = 2  # subtle line spacing
+y = 3  # subtle line spacing
 
 
 [colors]

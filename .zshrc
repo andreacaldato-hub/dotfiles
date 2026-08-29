@@ -204,11 +204,15 @@ alias cd="z"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-if [[ -z $TMUX ]] && [[ -n $PS1 ]]; then
-  tmux new-session -A -s andrea -c "$HOME/andrea"
-fi
-neofetch
+#if [[ -z $TMUX ]] && [[ -n $PS1 ]]; then
+#  tmux new-session -A -s andrea -c "$HOME/andrea"
+#fi
 export PATH="$HOME/.aftman/bin:$PATH"
 
 # opencode
 export PATH=/home/andrea/.opencode/bin:$PATH
+# Esegui il fetch solo se NON proviene da una shortcut/script
+#NO_FETCH=1 tmux new-session -d -s "$session_name" -c "$selected"
+#if [[ -z "$NO_FETCH" ]]; then
+#  neofetch
+#fi
