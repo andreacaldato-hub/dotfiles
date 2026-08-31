@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+if [[ $# -eq 1 ]]; then
+  selected=$1
+else
+  selected=$( (
+    echo "$HOME"
+    # Aggiunto --exclude '/dotfiles' per evitare che la cartella dotfiles venga scansionata due volte
+    fd --type d --max-depth 6 --hidden --no-ignore \
+      --exclude '.git' \
+      --exclude '.cache' \
+      --exclude '.cargo' \
+      --exclude '.oh-my-zsh' \
+      --exclude '.ssh' \
+      --exclude 'qylock' \
+      --exclude 'paru' \
+      --exclude '.npm' \
+      --exclude '/.config' \
+      --exclude '/.local' \
+      --exclude '/dotfiles' \
+      . "$HOME" "$HOME/dotfiles"
+  ) | fzf --color='hl:#CBA85E,hl+:#CBA85E' --no-preview --prompt $'⚡Session: ' )
+fi
+
+[[ -z "$selected" ]] && exit 0
+selected="${selected%/}"
+# Genera un nome di sessione pulito (sostituisce . e : con _)
+session_name=$(basename "$selected" | tr '.:' '__')
+
+# Se la sessione non esiste, la crea
+if ! tmux has-session -t "$session_name" 2>/dev/null; then
+  # Se la cartella non è accessibile al tuo utente normale (richiede root)
+  if [[ ! -r "$selected" || ! -x "$selected" ]]; then
+    # Esegue sudo per accedere alla cartella, ma avvia la shell col TUO utente e le SUE configurazioni
+    tmux new-session -d -s "$session_name" "sudo sh -c 'cd \"$selected\" && exec su -s \$SHELL $USER'"
+  else
+    tmux new-session -d -s "$session_name" -c "$selected"
+  fi
+fi
+
+# Switch o attach alla sessione
+[[ -n "$TMUX" ]] && tmux switch-client -t "$session_name" || tmux attach -t "$session_name"

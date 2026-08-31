@@ -24,13 +24,12 @@ Thumbs.db
 *.pyc
 *.class
 
-bin/
 
 # Ignore zsh / bash history
 *.history
 
 # Ignore eza-themes folder
 .config/eza/eza-themes/
-.config/nvim
 .config/nvim/.git
+.config/nvim/
 .config/noctalia/plugins/
