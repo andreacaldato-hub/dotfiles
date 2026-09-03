@@ -4,20 +4,20 @@ if [[ $# -eq 1 ]]; then
 else
   selected=$( (
     echo "$HOME"
-    # Aggiunto --exclude '/dotfiles' per evitare che la cartella dotfiles venga scansionata due volte
+    
+    # 1. Scansiona $HOME (escludendo .local e la cartella dotfiles)
     fd --type d --max-depth 6 --hidden --no-ignore \
-      --exclude '.git' \
-      --exclude '.cache' \
-      --exclude '.cargo' \
-      --exclude '.oh-my-zsh' \
-      --exclude '.ssh' \
-      --exclude 'qylock' \
-      --exclude 'paru' \
-      --exclude '.npm' \
-      --exclude '/.config' \
-      --exclude '/.local' \
-      --exclude '/dotfiles' \
-      . "$HOME" "$HOME/dotfiles"
+      --exclude '{.git,.cache,.cargo,.oh-my-zsh,.ssh,.gnupg,.m2,.sts4,qylock,paru,.npm,.config,.local,dotfiles}' \
+      . "$HOME"
+
+    # 2. Mostra e scansiona ~/dotfiles (senza escludere .local al suo interno)
+    if [[ -d "$HOME/dotfiles" ]]; then
+      echo "$HOME/dotfiles"
+      fd --type d --max-depth 6 --hidden --no-ignore \
+        --exclude '{.git,.cache,.cargo,.oh-my-zsh,.ssh,.gnupg,.m2,.sts4,qylock,paru,.npm}' \
+        . "$HOME/dotfiles"
+    fi
+
   ) | fzf --color='hl:#CBA85E,hl+:#CBA85E' --no-preview --prompt $'⚡Session: ' )
 fi
 

@@ -454,12 +454,14 @@ Super+A { spawn-sh "noctalia msg panel-toggle launcher"; }
 
 Super+W { spawn-sh "noctalia msg panel-toggle wallpaper"; }
 
+Super+C { spawn-sh "noctalia msg panel-toggle clipboard"; }
+
 Super+B hotkey-overlay-title="Opening Spotify: spotify " {
         spawn-sh "spotify";
 }
 
-Super+C { spawn "firefox" "--new-window" "https://claude.ai"; 
-}
+
+//Super+C { spawn "firefox" "--new-window" "https://claude.ai"; 
 
 Super+U { spawn-sh "qs -c noctalia-shell ipc call plugin:unicode toggle"; 
 }

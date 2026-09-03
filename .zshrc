@@ -64,6 +64,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
+export PATH="/usr/lib/jvm/default/bin:$PATH"
 # COMPLETION STYLING
 # =============================
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
