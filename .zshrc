@@ -65,20 +65,38 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 export PATH="/usr/lib/jvm/default/bin:$PATH"
+
 # COMPLETION STYLING
 # =============================
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
+
 # =============================
-# FZF-TAB PREVIEWS (FILES + DIRS)
+# FZF-TAB PREVIEWS
 # =============================
-zstyle ':fzf-tab:*' fzf-preview '
+
+# 1. Preview per File e Directory
+zstyle ':fzf-tab:complete:*:*' fzf-preview '
 if [ -d "$realpath" ]; then
   eza --tree --level=2 --icons --color=always "$realpath"
 elif [ -f "$realpath" ]; then
   bat --style=numbers --color=always "$realpath"
 fi
+'
+
+# 2. Preview per i Comandi di sistema e gli Executable (mostra la pagina MAN)
+zstyle ':fzf-tab:complete:-command-:*' fzf-preview '
+(man \(word ||\)word --help) 2>/dev/null | head -n 100
+'
+
+# 3. Preview per le opzioni dei comandi/Sottocomandi (es. git, systemctl)
+zstyle ':fzf-tab:complete:*:options' fzf-preview 'echo $desc'
+zstyle ':fzf-tab:complete:*:argument-1' fzf-preview 'echo $desc'
+
+# 4. Preview per le Variabili d'Ambiente (es. $PATH)
+zstyle ':fzf-tab:complete:(-command-|-parameter-|-brace-parameter-):*' fzf-preview '
+echo ${(P)word}
 '
 
 # Make fzf-tab preview window taller
@@ -87,18 +105,26 @@ zstyle ':fzf-tab:*' fzf-flags --preview-window=right:60%:nowrap
 # =============================
 # FZF DEFAULT PREVIEW
 # =============================
+#
+# =============================
+# FZF CONFIGURATION
+# =============================
+# Opzioni generali per FZF (senza preview per non rompere Ctrl+R)
+#
 export FZF_DEFAULT_OPTS='
+--bind ctrl-u:preview-page-up,ctrl-d:preview-page-down
+'
+
+# Preview dedicata SOLO quando cerchi i file con Ctrl+T
+export FZF_CTRL_T_OPTS='
 --preview "
 if [ -d {} ]; then
   eza --tree --level=3 --icons --color=always {}
 else
-  stat {}
-  echo ----------------
-  bat --style=numbers --color=always --line-range :2000 {}
+  bat --style=numbers --color=always --line-range :2000 {} 2>/dev/null || stat {}
 fi
 "
 --preview-window=up:70%:wrap
---bind ctrl-u:preview-page-up,ctrl-d:preview-page-down
 '
 
 # Set list of themes to pick from when loading at random
@@ -215,5 +241,5 @@ export PATH=/home/andrea/.opencode/bin:$PATH
 # Esegui il fetch solo se NON proviene da una shortcut/script
 #NO_FETCH=1 tmux new-session -d -s "$session_name" -c "$selected"
 #if [[ -z "$NO_FETCH" ]]; then
-#  neofetch
+neofetch
 #fi
