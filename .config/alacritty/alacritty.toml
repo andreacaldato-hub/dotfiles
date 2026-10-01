@@ -21,19 +21,19 @@ family = "JetBrains Mono Nerd"
 style = "Regular"
 
 [font.bold]
-family = "JetBrains Mono"
-style = "Regular"
+family = "JetBrains Mono Nerd"
+style = "Thin Bold"
 
 [font.italic]
-family = "JetBrains Mono"
+family = "JetBrains Mono Nerd"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrains Mono"
+family = "JetBrains Mono Nerd"
 style = "Bold Italic"
 [font.offset]
 
-y = 3  # subtle line spacing
+y = 3 # subtle line spacing
 
 [colors.primary]
 background = '#0D0C0C'
