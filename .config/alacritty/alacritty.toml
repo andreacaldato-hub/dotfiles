@@ -30,39 +30,39 @@ style = "Italic"
 
 [font.bold_italic]
 family = "JetBrains Mono Nerd"
-style = "Bold Italic"
-[font.offset]
+style = "Thin Bold Italic"
 
+[font.offset]
 y = 3 # subtle line spacing
+
 
 [colors.primary]
 background = '#0D0C0C'
-foreground = '#C5C9C5'
+foreground = '#ABB2BF'
 
 [colors.normal]
-black   = '#0D0C0C'
-red     = '#C4746E'
-green   = '#8A9A86'
-yellow  = '#C4B28A'
-blue    = '#8BA4B0'
-magenta = '#A292A3'
-cyan    = '#8EA4A2'
-white   = '#C5C9C5'
+black   = '#1E2127'
+red     = '#E06C75'
+green   = '#98C379'
+yellow  = '#D19A66'
+blue    = '#61AFEF'
+magenta = '#C678DD'
+cyan    = '#56B6C2'
+white   = '#ABB2BF'
 
 [colors.bright]
-black   = '#A2A2A2'
-red     = '#E46876'
-green   = '#87A987'
-yellow  = '#E6C384'
-blue    = '#7FB4CA'
-magenta = '#938AA9'
-cyan    = '#7AA89F'
-white   = '#E6EAE6'
+black   = '#5C6370'
+red     = '#E06C75'
+green   = '#98C379'
+yellow  = '#E5C07B'
+blue    = '#61AFEF'
+magenta = '#C678DD'
+cyan    = '#56B6C2'
+white   = '#FFFFFF'
 
 [colors.selection]
-text = '#C5C9C5'
-background = '#2D4F67'
+text = '#ABB2BF'
+background = '#3E4451'
 
 [colors.cursor]
-text = '#12120F'
-cursor = '#C8C093'
+text = '#282C34'

@@ -61,6 +61,8 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin/tmux:$PATH"
+export PATH="$HOME/.local/bin/java:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"

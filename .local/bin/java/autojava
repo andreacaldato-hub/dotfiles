@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+# newjava: crea la struttura di un progetto Java compatibile con jdtls
+# Uso:
+#   newjava nome_progetto   -> crea ./nome_progetto e ci mette tutto dentro
+#   newjava                 -> usa la cartella corrente
+set -euo pipefail
+
+if [ $# -ge 1 ]; then
+  mkdir -p "$1"
+  cd "$1"
+fi
+
+NAME="$(basename "$PWD")"
+
+mkdir -p src bin
+
+write_if_missing() {
+  # $1 = file di destinazione, il contenuto arriva da stdin
+  if [ -e "$1" ]; then
+    echo "salto $1 (esiste già)"
+    cat >/dev/null
+  else
+    cat >"$1"
+    echo "creato $1"
+  fi
+}
+
+write_if_missing .classpath <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="output" path="bin"/>
+</classpath>
+EOF
+
+write_if_missing .project <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+  <name>${NAME}</name>
+  <buildSpec>
+    <buildCommand>
+      <name>org.eclipse.jdt.core.javabuilder</name>
+    </buildCommand>
+  </buildSpec>
+  <natures>
+    <nature>org.eclipse.jdt.core.javanature</nature>
+  </natures>
+</projectDescription>
+EOF
+
+# Attenzione: nel Makefile le righe dei comandi iniziano con un TAB
+write_if_missing Makefile <<'EOF'
+MAIN_CLASS = Main
+SOURCES = $(shell find src -name "*.java")
+
+all: run
+
+compile:
+	@mkdir -p bin
+	@javac -d bin -sourcepath src $(SOURCES)
+
+run: compile
+	@java -cp bin $(MAIN_CLASS)
+
+clean:
+	@rm -rf bin
+EOF
+
+write_if_missing .gitignore <<'EOF'
+bin/
+out/
+EOF
+
+echo "Fatto: progetto '$NAME' pronto."
