@@ -228,7 +228,6 @@ bindkey -s '^[F' 'tmux-switch\n'
 alias ll="eza -l --icons --long --git --group-directories-first"
 alias la="eza -la --icons --long --git --group-directories-first"
 alias neofetch="clear && neofetch"
-alias cd="z"
 # alias cd="z"
 
 eval "$(fzf --zsh)"
