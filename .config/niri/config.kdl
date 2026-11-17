@@ -69,6 +69,9 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 spawn-at-startup "noctalia"
 
+// Preload Loupe in background so images open instantly
+spawn-at-startup "loupe" "--gapplication-service"
+
 // ───────────── Window rules ─────────────
 // Rounded corners on every window
 window-rule {
@@ -105,6 +108,12 @@ window-rule {
     open-floating true
 }
 
+// Image viewer (Loupe): floating, centered by niri
+window-rule {
+    match app-id="org.gnome.Loupe"
+    open-floating true
+}
+
 // ───────────── Keybinds ─────────────
 binds {
     // ── Apps ──
@@ -127,7 +136,7 @@ binds {
     // ── System ──
     Super+Shift+K         hotkey-overlay-title="Keybinds cheatsheet"          { spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
     Super+Shift+Q         hotkey-overlay-title="LogOut"                       { quit skip-confirmation=true; }
-    Super+Alt+L           hotkey-overlay-title="Lock screen"                  { spawn "swaylock"; }
+    Super+Alt+L           hotkey-overlay-title="Lock screen"                  { spawn-sh "noctalia msg session lock"; }
 
     // ── Audio ──
     Super+Shift+Equal     hotkey-overlay-title="Volume +10%"                  { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
@@ -167,10 +176,10 @@ binds {
     Super+Shift+L         hotkey-overlay-title="Move column right"            { move-column-right; }
 
     // ── Workspaces: focus ──
-    Super+1               hotkey-overlay-title="Go to workspace 1"            { focus-workspace "Main"; }
-    Super+2               hotkey-overlay-title="Go to workspace 2"            { focus-workspace "2-Browser"; }
-    Super+3               hotkey-overlay-title="Go to workspace 3"            { focus-workspace "3-Other"; }
-    Super+4               hotkey-overlay-title="Go to workspace 4"            { focus-workspace "4-Music"; }
+    Super+1               hotkey-overlay-title="Go to workspace 1"            { focus-workspace 1; }
+    Super+2               hotkey-overlay-title="Go to workspace 2"            { focus-workspace 2; }
+    Super+3               hotkey-overlay-title="Go to workspace 3"            { focus-workspace 3; }
+    Super+4               hotkey-overlay-title="Go to workspace 4"            { focus-workspace 4; }
     Super+5               hotkey-overlay-title="Go to workspace 5"            { focus-workspace 5; }
     Super+6               hotkey-overlay-title="Go to workspace 6"            { focus-workspace 6; }
     Super+7               hotkey-overlay-title="Go to workspace 7"            { focus-workspace 7; }
@@ -178,8 +187,8 @@ binds {
     Super+9               hotkey-overlay-title="Go to workspace 9"            { focus-workspace 9; }
 
     // ── Workspaces: move window (Shift) ──
-    Super+Shift+1         hotkey-overlay-title="Move to workspace 1"          { move-window-to-workspace "Main"; }
-    Super+Shift+2         hotkey-overlay-title="Move to workspace 2"          { move-window-to-workspace "2-Browser"; }
-    Super+Shift+3         hotkey-overlay-title="Move to workspace 3"          { move-window-to-workspace "3-Other"; }
-    Super+Shift+4         hotkey-overlay-title="Move to workspace 4"          { move-window-to-workspace "4-Music"; }
+    Super+Shift+1         hotkey-overlay-title="Move to workspace 1"          { move-window-to-workspace 1; }
+    Super+Shift+2         hotkey-overlay-title="Move to workspace 2"          { move-window-to-workspace 2; }
+    Super+Shift+3         hotkey-overlay-title="Move to workspace 3"          { move-window-to-workspace 3; }
+    Super+Shift+4         hotkey-overlay-title="Move to workspace 4"          { move-window-to-workspace 4; }
 }

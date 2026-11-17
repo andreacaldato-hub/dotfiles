@@ -13,6 +13,9 @@ Thumbs.db
 !package.json
 !tsconfig.json
 !*.config.json
+!cli.json
+!manifest.json
+!metadata.desktop
 
 # Ignore all other JSON
 *.json
@@ -33,3 +36,6 @@ Thumbs.db
 .config/nvim/.git
 .config/nvim/
 .config/noctalia/plugins/
+
+# tmux plugins (clonati da install.sh: TPM + kanagawa-tmux)
+.config/tmux/plugins/
